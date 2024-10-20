@@ -22,6 +22,7 @@ console.log(typeof undfn);
 
 let x=NaN;                 //Nan
 console.log(x);
+console.log(typeof x);      //number
 
 let str="Rahul"
 console.log(str);          //String     "Rahul
@@ -66,5 +67,5 @@ console.log(typeof (Symbol(10)));                //symbol
 console.log(Boolean(Symbol(10)));       //True
 
 var l=Object(a);
-console.log(typeof l);
+console.log(typeof l);                  //object
 

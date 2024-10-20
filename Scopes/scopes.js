@@ -8,7 +8,7 @@ if(true){
     var l=10;
 }
 var l;
-console.log(l);//10 can access from any where
+console.log(l);//10 can access from any where as it is stored into heap area
 
 var b=20;
 if(true){
