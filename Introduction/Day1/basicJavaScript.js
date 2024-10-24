@@ -6,18 +6,12 @@ var colour='pink';
 
 console.log(x);
 
-//obj in js
-var user={
-    name: "Rahul",
-    age: 23,
-    degree: "BE"
-}
 
 
 var score=[1,2,4,5,6,10,"hello",user];
 
 
-console.log("User is ",user);
+
 
 console.error("unexpected error");
 console.warn("This is warning!");
