@@ -27,8 +27,7 @@ console.log(obj);
 let example=new Object();       //3.1 create obj and then assign using dot operator
 example.name="Rahul"
 
-let example2=new Object({name:"Rohit"})    //3.2 direct passing onj into object constructor
-
+let example2=new Object({name:"Rohit"})    //3.2 direct passing obj into object constructor
 console.log(example2);
 
 
@@ -48,7 +47,7 @@ let student1= new Student("yash",21);
 console.log(student1);
 
 
-//6. by returning obj into function 
+//6. by returning obj into function => Factory function 
 let example5=(name,age)=>{
     return {
         name:name,
@@ -100,7 +99,7 @@ Object.assign(user,car);
 
 console.log(user);//useer will get all  properties of car obj init
 
-//   Used to convert obj into an array. it will get store individual property as 1 array and nested array will get created[[prop1],[prop2]...]
+// Used to convert obj into an array. it will get store individual property as 1 array and nested array will get created[[prop1],[prop2]...]
 console.log(Object.entries(car));
 
 //array into obj=> must follow this syntax arr=[10,20,30] not possible
@@ -114,7 +113,23 @@ console.log(jsonObj);
 console.log(JSON.parse(jsonObj));
 
 
+// cloning Inbuilt object in js
+
+let DummyWindow={
+    alearD :()=>{}
+}
 
 
+//seal freeze
+let student={
+    name:"deepak",
+    rollNo:46,
+    std:"10th"
+}
+//Object.seal(student); //We can only update existing properties of obj we neither can add nor can delete any property using seal(loosely final).
+Object.freeze(student); //strict final we cannot even update when freeze
+student.name="Tejas";
+console.log(student);
 
-
+console.log(Object.isFrozen(student)); //will return true or false if frozen all not
+console.log(Object.isSealed(student)); //frozen= sealed + resist to update 
