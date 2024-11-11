@@ -133,3 +133,4 @@ console.log(student);
 
 console.log(Object.isFrozen(student)); //will return true or false if frozen all not
 console.log(Object.isSealed(student)); //frozen= sealed + resist to update 
+
