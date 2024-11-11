@@ -1,10 +1,10 @@
-// // let str= new String("Hello");
+// // let hello= new String("Hello");
 // let str2="Hello World"
-// console.log(str); //will get stored as separate object  
+// console.log(hello); //will get stored as separate object  
 // // console.log(this);
 
-// console.log(str.toLowerCase());//hello
-// console.log(str.toUpperCase());//HELLO
+// console.log(hello.toLowerCase());//hello
+// console.log(hello.toUpperCase());//HELLO
 
 
 //padding
@@ -74,6 +74,7 @@ console.log(str4.replace("Yuvraj","Milkha"));
 
 let tut="Qspiders";
 let a= tut.split(s);    
+
 
 
 
