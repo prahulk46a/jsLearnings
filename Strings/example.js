@@ -68,7 +68,7 @@ console.log(findFirstA("Agrawal")); //3
 let replaceDayWithNight=(str)=>{
     return str.replace("day","Night");
 }
-console.log(replaceDayWithNight("What a beautiful day it is !! Hope next day will be same !")); //What a beautiful Night it is !! Hope next day will be same !
+console.log(replaceDayWithNight("What a beautiful day it is !! Hope next day will be same !")); //"What a beautiful Night it is !! Hope next day will be same !"
 
 
 
@@ -76,7 +76,7 @@ console.log(replaceDayWithNight("What a beautiful day it is !! Hope next day wil
 let replaceAppleWithOrange=(str)=>{
     return str.replaceAll("apple", "orange");
 }
-console.log(replaceAppleWithOrange("apple pie and apple juice")); //orange pie and orange juice
+console.log(replaceAppleWithOrange("apple pie and apple juice")); //"orange pie and orange juice"
 
 
 
@@ -84,7 +84,7 @@ console.log(replaceAppleWithOrange("apple pie and apple juice")); //orange pie a
 let getFirstFive=(str)=>{
     return str.slice(0,5);
 }
-console.log(getFirstFive("Rahul Patil"));
+console.log(getFirstFive("Rahul Patil"));   //"Rahul"
 
 
 
@@ -100,7 +100,7 @@ console.log(splitIntoWords("This is splitted word"));  // ['this','is','splitted
 let toLowercase=(str)=>{
     return str.toLowerCase();
 }
-console.log(toLowercase("RAHUL"));  //rahul
+console.log(toLowercase("RAHUL"));  //"rahul"
 
 
 
@@ -108,7 +108,7 @@ console.log(toLowercase("RAHUL"));  //rahul
 let toUppercase=(str)=>{
     return str.toUpperCase();
 }
-console.log(toUppercase("patil")); //PATIL
+console.log(toUppercase("patil")); //"PATIL"
 
 
 
@@ -117,7 +117,7 @@ let numberToString=(num)=>{
     return num.toString();
 }
 console.log(numberToString(45));// "45"
-console.log(typeof(numberToString(45)));//string
+console.log(typeof(numberToString(45))); //string
 
 
 
@@ -125,7 +125,7 @@ console.log(typeof(numberToString(45)));//string
 let trimWhitespace=(str)=>{
     return str.trim();
 }
-console.log(trimWhitespace("    Rahul")); //Rahul
+console.log(trimWhitespace("    Rahul")); //"Rahul"
 
 
 
@@ -133,7 +133,7 @@ console.log(trimWhitespace("    Rahul")); //Rahul
 let trimStartWhitespace=(str)=>{
     return str.trimStart();
 }
-console.log(trimStartWhitespace("    gupta")); //gupta
+console.log(trimStartWhitespace("    gupta")); //"gupta"
 
 
 
@@ -141,7 +141,7 @@ console.log(trimStartWhitespace("    gupta")); //gupta
 let trimEndWhitespace=(str)=>{
     return str.trimEnd();
 }
-console.log(trimEndWhitespace("    kumar     "));//    kumar
+console.log(trimEndWhitespace("    kumar     "));//"    kumar"
 
 
 
@@ -165,7 +165,7 @@ console.log(padWithTrailingZeros(45)); //45000
 let getLastThree=(str)=>{
     return str.length<=3?str:str.slice(-3);
 }
-console.log(getLastThree("Javascript"));//ipt
+console.log(getLastThree("Javascript")); //ipt
 
 
 
@@ -219,7 +219,7 @@ console.log(reverseWords("JavaScript is fun")); //fun is JavaScript
 let cleanAndMeasureLength = (sentence) => {
     return sentence.replace(/\s+/g, '').length;   
 };
-console.log(cleanAndMeasureLength("Hello World"));//10
+console.log(cleanAndMeasureLength("Hello World")); //10
 
 
 
@@ -228,7 +228,7 @@ let extractAndReplace = (sentence) => {
     let firstFiveChars = sentence.slice(0, 5); 
     return firstFiveChars.replace(/a/g, 'o'); 
 };
-console.log(extractAndReplace("JavaScript is fun"));//JovoS
+console.log(extractAndReplace("JavaScript is fun")); //JovoS
 
 
 
@@ -249,7 +249,7 @@ let padWithAsterisks = (str) => {
     }
     let leftPadding = Math.floor(paddingNeeded / 2);
     let rightPadding = paddingNeeded - leftPadding;
-    return '*'.repeat(leftPadding) + str + '*'.repeat(rightPadding);//****hi****
+    return '*'.repeat(leftPadding) + str + '*'.repeat(rightPadding); //****hi****
 };
 console.log(padWithAsterisks("Hi")); 
 
@@ -259,4 +259,4 @@ let checkForWordInArray = (sentence) => {
     let words = sentence.split(" "); 
     return words.includes("JavaScript"); 
 };
-console.log(checkForWordInArray("I love JavaScript and coding!"));//true
+console.log(checkForWordInArray("I love JavaScript and coding!")); //true
