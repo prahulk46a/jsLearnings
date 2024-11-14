@@ -1,3 +1,13 @@
+//this will not include name as this will point towards current obj using arrow
+// const person={
+//     name:"alice",
+//     greet:()=>{
+//         console.log("hello"+this.name);
+//     }
+// };
+// person.greet();
+
+
 const person={
     name:"Rahul",
     //function should be simple only no arrow function should be used as it will points towards window
@@ -52,6 +62,11 @@ f2.apply(obj3,[10,20,30]);   //just syntax diffrence here in 3 methods
 let returnedFunc=f2.bind(obj3,10,20,30); //will return refrence of this current funct and can be called in future
 returnedFunc()
 
+
+
+// console.error("unexpected error");
+// console.warn("This is warning!");
+// console.log(typeof(x));
 
 
 

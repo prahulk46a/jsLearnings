@@ -43,7 +43,7 @@ let sliceString= (str3,num1,num2)=>{
     return ans;
 }
 let ans1=sliceString("Rahul",2,5);
-console.log(ans1);
+console.log(ans1);//hul
 
 //default impl
 let str4="Pancheshwar";
@@ -62,6 +62,8 @@ console.log(str4.slice(-1));//r
 let player="Yuvraj Singh";
 console.log(player[-2]); // undefined
 console.log(player.substring(1,4));//uvr  (startIndex,endLength)
+
+//substr
 console.log(player.substr(2,5));//vraj=> (startIndex,length from that index) 
 console.log(player.substr(9,7));//ngh=> if more than string length passed it will take upto end
 
@@ -97,7 +99,7 @@ console.log(obj);
 
 //charAt=> returns character at that point 
 let ex3="Abhishek";
-console.log(ex3.charAt(2));
+console.log(ex3.charAt(2));//h
 //charCodeAt=> return character ascii at that position
 console.log(ex3.charCodeAt(0));//65
 
@@ -106,6 +108,8 @@ console.log(ex3.charCodeAt(0));//65
 let ex4="Hi";
 let ex5="! How are you??"
 console.log(ex4.concat(ex5));
+
+console.log(ex5.indexOf("H"));//return index of first occurrence 
 
 
 
