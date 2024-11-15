@@ -7,22 +7,22 @@ console.log(hello.toLowerCase());//hello
 console.log(hello.toUpperCase());//HELLO
 
 
-//padding
-//custom impl
-let str2="1234";
-let addPadding=(str2,len,val)=>{
-    if(str2.length>=len){
-        return str2;
-    }
-    else{
-        for(let i=str2.length;i<len;i++){
-            str2+=val;
-        }
-        return str2;
-    }
-}
-console.log(addPadding(str2,10,"x"));
-console.log(str2);
+// //padding
+// //custom impl
+// let str2="1234";
+// let addPadding=(str2,len,val)=>{
+//     if(str2.length>=len){
+//         return str2;
+//     }
+//     else{
+//         for(let i=str2.length;i<len;i++){
+//             str2+=val;
+//         }
+//         return str2;
+//     }
+// }
+// console.log(addPadding(str2,10,"x"));
+// console.log(str2);
 
 //default impl
 let num= "83"
