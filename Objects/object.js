@@ -97,9 +97,10 @@ console.log(allkey);
 
 Object.assign(user,car);
 
-console.log(user);//useer will get all  properties of car obj init
+console.log(user);//user will get all  properties of car obj init
 
 // Used to convert obj into an array. it will get store individual property as 1 array and nested array will get created[[prop1],[prop2]...]
+console.log("Entries method in js");
 console.log(Object.entries(car));
 
 //array into obj=> must follow this syntax arr=[10,20,30] not possible

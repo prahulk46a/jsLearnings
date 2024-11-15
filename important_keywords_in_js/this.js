@@ -38,13 +38,13 @@ function f1(){
     console.log(this);
 }
 
-// f1(); //this will point towards window obj but we want that this inside funct should point to current obj2 
+// f1(); //this will point towards window obj but we want that this inside func should point to current obj2 
 
 // f1.call(obj2); //by doing this it will point towards current obj.
 
 
 
-//Ways to pointing current obj to this=> call bind apply  and diffrence
+
 
 let obj3={
     name:"Akanksha",
@@ -55,11 +55,11 @@ function f2(a,b,c){
     console.log(a,b,c);
 }
 
-f2.call(obj3,10,20,30);
+f2.call(obj3,10,20,30);// by doing this f2 will point towards obj3 
 
-f2.apply(obj3,[10,20,30]);   //just syntax diffrence here in 3 methods
+f2.apply(obj3,[10,20,30]);   //just syntax difference here in 3 methods
 
-let returnedFunc=f2.bind(obj3,10,20,30); //will return refrence of this current funct and can be called in future
+let returnedFunc=f2.bind(obj3,10,20,30); //will return reference of this current func and can be called in future
 returnedFunc()
 
 

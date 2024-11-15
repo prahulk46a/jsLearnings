@@ -33,7 +33,7 @@ let outer=()=>{
     }
     return inner;
 }
-            // js currying  (outer()=> output of first paranthesis. 
+            // js currying  (outer()=> output of first parenthesis. 
 outer()();  // will be returned function and that is immediately get called using 2nd brace)
   
 

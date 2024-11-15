@@ -38,7 +38,7 @@ console.log(sqr(num));
 
 //we cannot recall immediate invoke function
 //first bracket as parameters and in second we pass argument
-//convention to follow=> should not use space between 2 paranthesis.Semicolon is mandatory before line 
+//convention to follow=> should not use space between 2 parenthesis.Semicolon is mandatory before line 
 ((a,b)=>{console.log(a+b)})(5,10);
 
 

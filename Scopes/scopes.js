@@ -13,7 +13,7 @@ console.log(l);//10 can access from any where as it is stored into heap area
 var b=20;
 if(true){
     var b;
-    console.log(b); //20 local can accesed in global and vice-versa only for var this is problematic
+    console.log(b); //20 local can accessed in global and vice-versa only for var this is problematic
 }
 
 

@@ -41,11 +41,11 @@ console.log(objFromArray);
 const contactInfo = {
     phone: '123-456-7890',
     email: 'john.doe@example.com'
-  };
+};
 
-  const address = {
+const address = {
     street: '123 Main St',
     city: 'Anytown',
     state: 'CA'
-  };
+};
   

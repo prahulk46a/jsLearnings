@@ -43,9 +43,7 @@ JavaScript
 
 
 
-//Function
-- reusable block of code which has some task 
-- arguments are passed as parameter first as soon as function get call and after that it will start executing code  
+ 
 
 // Ways to define function
 - Simple function 
@@ -67,7 +65,7 @@ JavaScript
 - Window is parent object it contains multiple nested objects
 - Window obj stored in heap area like other and is super obj of other obj 
 - Dom is inside window obj 
-- all first gen child of window obj we can directly access by name ex. window.alert() = alert()
+- all first gen child of window obj we can directly access by name ex. window.alert() = alert()(achieved using destructuring)
 - all non primitive datatypes stored inside window obj
 - variables declared using in global scope are also stored into window obj
 
@@ -82,14 +80,16 @@ Global=> declared+ initialized outside block
 as soon as function get called immediate another call stack will get created for function separately  
 
 
-// Functions
-- Simple function
-- Arrow function=> Way to write functions more clear=> (parameters)=>{ //Body }
-- Higher order functions=> Function which expects another function as an argument is HOF
-- Callback functions=> And function which is passed as argument inside function parameters is callback function.
-- Anonymous function=> Function which doesn't have name is anonymous function.
-- JavaScript currying()() function will immediate invoke calling output function on same line 
-when we are returning nested function instead of storing that returned function into new variable we can immediately call that returned function using js currying.
+//Function - Reusable block of code which has some task 
+	   - Arguments are passed as parameter first as soon as function get call and after that it will start executing code 
+Types of function:
+	- Simple function
+	- Arrow function=> Way to write functions more clear=> (parameters)=>{ //Body }
+	- Higher order functions=> Function which expects another function as an argument is HOF
+	- Callback functions=> And function which is passed as argument inside function parameters is callback function.
+	- Anonymous function=> Function which doesn't have name is anonymous function.
+	- JavaScript currying()() function will immediate invoke calling output function on same line 
+	  when we are returning nested function instead of storing that returned function into new variable we can immediately call that returned function using js currying.
 
 
 // Temporal Dead zone
@@ -121,44 +121,88 @@ closures
 
 
 
-Objects=>
-1.Creating object using obj literal way
-	--Way 1--
-	let user={ 
-    	    name: "Rahul", 
-    	    age: 23, 
-    	    degree: "BE" 
-	}
+// Objects=>
+1.Ways to create object in js.
+	-- Way 1: Creating object using obj literal way--
+		let user={ 
+    		    name: "Rahul", 
+    		    age: 23, 
+    		    degree: "BE" 
+		}
 
-	--Way2--
-	class Demo{
- 	   //constructors is declare like this
-	    constructor(name,age){
-	        this.name=name;
-	        this.age=age;
-	    }
-	 }
+	-- Way2: Using new keyword --
+		class Demo{
+ 		   //constructors is declare like this
+		    constructor(name,age){
+		        this.name=name;
+	   	        this.age=age;
+	   	    }
+	 	}
+		let obj=new Demo("Rahul",23);
+	
+	-- Way3.1 : Using object class --
+		let example=new Object();
+		example.name="Rahul"
 
-let obj=new Demo("Rahul",23);
+	-- Way3.2 : Using object class --
+		let example=new Object({name:"Rohit"});
+		console.log(example)
 
-2. Read operation
+	-- Way 4 : using Object.create() --
+		let example3=Object.create({});//compulsory to pass empty object
+		example3.name="Tinku";
+		console.log(example3);
+	-- Way 5 : Using constructor function --
+		function Student(name,age){
+    	             this.name=name;
+    		     this.age=age;
+		}
+		let student1= new Student("yash",21);
+		console.log(student1);
+	-- Way 6 : By returning obj into function --
+		let example5=(name,age)=>{
+		    return {
+		        name:name,
+		        age:age
+		    };
+		}
+		let val=example5("surya",36)//this will not treated as class 
+		let val2=example5("Rishabh",32)
+		console.log(val);
+		console.log(val2);
 
+2. Crud Operations
+- Read operation
   - Entire object
      console.log(car)
   
   - Individual properties
      console.log(car["brand"]);
      console.log(car.color);
-
-3. Update
+- Update
      car.color="Black"
 
-4. Delete
+- Delete
     delete car.price
     we cannot delete entire obj can delete only properties
 
+3. Methods of Object class
+    	- Object.keys(objRef); //returns array of key
+	- Object.values(objRef); //returns array of all values
+	- Object.assign(target,objRef) //Assigns all prop of objRef into target obj 	
+	- Object.entries(car)	//convert obj into an array in format=[[key1,val1],[ke2,val2]...]
+	- Object.fromEntries(format)	//above formatted array must be passed to get back arr into obj
+	- JSON.stringify(car);	//Object conversion into json format
+	- JSON.parse(jsonObj)	//Json to Obj conversion
+	- Object.freeze(objRef)	//nor can add new prop to obj neither update
+	- Object.seal(objRef);  //Can update prop butt cannot add new prop
+	- Object.isFrozen()	//Way to check if freezed or not
+	- Object.isSealed()	//true if either sealed or frozen
 
-//This keywords scenarios
+
+
+
+// This keywords scenarios
 In global(window),blocks(window), object{2 scenario => arrow function(window), regular function(curr obj)}, object(nested functions{2 scenario => arrow function(curr)because of lexical scoping, regular function(window obj)}
 
 //call apply bind
@@ -169,7 +213,7 @@ In global(window),blocks(window), object{2 scenario => arrow function(window), r
 
 
 
-//String 
+// String 
 - In js string we can access char using indexes ex. str[0]
 - trimStart = -Remove extra spaces from start   
 - trimend = Remove extra spaces 
