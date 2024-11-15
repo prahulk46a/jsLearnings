@@ -1,0 +1,209 @@
+JavaScript
+//History
+- Brendon Eich 1995 Js founder
+- Mocha first name=> live script=> JavaScript=> ECMAScript 
+- Netscape company=> Netscape Navigator.
+- ES6 most popular version
+
+//Feature  of JavaScript
+- Synchronous
+- High level	(understandable for both human as well as machine)
+- Interpreted	(interpreter task is to run code line by line)
+- Single threaded
+- Object Based/ Object Oriented		(everything is object)
+- Loosely Type			
+- Dynamically typed			
+- Case Sensitive
+- Scripting Language	
+
+
+//Tokens smallest units of any programing language
+- Keywords=> var, let, const, if, else, continue, console, log, for, switch, break, while do, for each => predefined, cannot used as identifiers, 
+- Identifiers=> Name given to variables by programmer => special case cant used except $ and _. cant start with no, cant use space between 2 words 
+- Punctuators/separator=> Special char or symbols which has some specific meaning ex. , : ; "" `` {} ()
+- Operators=> Special char which are use to perform operations between operands arithmetic, assignment, bitwise, typeOf, ternary , equality compare(loosely, Strictly)
+- Literals => 
+
+//Literals => Datatypes=> Primitives - one which cannot further breakdown
+	      User defined - collection of both  primitive as well as user defined as single dt type
+- Number and BigInt => Range of number -(2^53-1)>x>(2^53-1) beyond that we store in bigint (a=10n)
+- Boolean true or false =>
+- Null (intentionally empty) 
+- Undefined 
+- String
+- Symbol=> Using symbols are unique. i.e. even if we value of 2 symbols is same but still it will be unique (== shows false)
+
+//Internals of JS
+- Number will directly converted into binary but char will be converted to char-> asci-> hex -> binary
+- JS file embedded in html file=> js engine =>Inside js engine there will be parser that will parse js code into chunks and stored in tree like structure AST(Abstract structure tree)=>each chunk is passed to just in time compiler to compile and convert into byte code and sent to interpreter => Interpreter converts byte code to machine understandable code=> processor will process code and gets o/p. 
+
+
+
+//var let const => every operation (Declaration, Initialization, declaration+ initialization, redeclaration, Re initialization) is possible with var but in let we cannot redeclare whereas in const only declaration + initialization possible
+
+
+
+//Function
+- reusable block of code which has some task 
+- arguments are passed as parameter first as soon as function get call and after that it will start executing code  
+
+// Ways to define function
+- Simple function 
+- Function as expression
+- Arrow function 
+- Immediate Invoke function expression(IIFE)//immediate popups this kind of scenarios use this type of function ex. cookies, ad => (()=>{”This is immediate invoke function”}) (). function declaration + call on same line
+
+
+
+
+//prompt=> Similar to scanner to take inputs
+- when you cancel prompt it gives null.
+- Default input type String
+
+//backticks
+` This is string declare using backticks${}` => this is called as “template literals” and writing js in that string using ${} is called as interpolation
+
+// Heap 
+- Window is parent object it contains multiple nested objects
+- Window obj stored in heap area like other and is super obj of other obj 
+- Dom is inside window obj 
+- all first gen child of window obj we can directly access by name ex. window.alert() = alert()
+- all non primitive datatypes stored inside window obj
+- variables declared using in global scope are also stored into window obj
+
+// Call stack
+- It has Global execution context(GEC) => will have 2 diff part/phases => variable declaration phase and execution phase
+-  
+
+
+// Scopes=>
+Local=>inside another braces/scope
+Global=> declared+ initialized outside block
+as soon as function get called immediate another call stack will get created for function separately  
+
+
+// Functions
+- Simple function
+- Arrow function=> Way to write functions more clear=> (parameters)=>{ //Body }
+- Higher order functions=> Function which expects another function as an argument is HOF
+- Callback functions=> And function which is passed as argument inside function parameters is callback function.
+- Anonymous function=> Function which doesn't have name is anonymous function.
+- JavaScript currying()() function will immediate invoke calling output function on same line 
+when we are returning nested function instead of storing that returned function into new variable we can immediately call that returned function using js currying.
+
+
+// Temporal Dead zone
+- Time span in between variable declaration(1) and initialization(2) is temporal dead zone
+
+ |  VD	    |	    exp		|
+ | var a;(1)|    clg(start);	|
+ | var y;   |    a=100;	(2)	|	
+
+// Memory allocation in main GEC for var let const
+- Variable declared using var will get memory in heap(window area) where as for let and const it will store into gec itself only and will get destroyed as soon as call is over. Hence we get undefined for var even declared after accessing.
+- this is variable which is assign to window object in js i.e. var this=window
+- let and const doesn't allow to access when they are in temporal dead zone hence it will get error if we access before initialization
+
+
+//Hoisting
+- Variable declared in declaration phase taking to execution phase is hoisting
+- let, Var, const all 3 are hoisted 
+- ability to move variable declared in top of execution context  
+
+//lexical scoping
+- The ability of js to search for variables in the outer function/parent function.
+
+closures
+- Closure is separate memory allocation 
+- if we are trying to access variables in child function from parent function then we are able to do that because of closure.
+- closure will get created for only functions. when variables are required from parent function  then only closure will store variable
+- It is the memory allocation which will store variables that we are trying to access in child function but declared in parent function. Closure will be created even if the parent function is removed from the call stack
+
+
+
+Objects=>
+1.Creating object using obj literal way
+	--Way 1--
+	let user={ 
+    	    name: "Rahul", 
+    	    age: 23, 
+    	    degree: "BE" 
+	}
+
+	--Way2--
+	class Demo{
+ 	   //constructors is declare like this
+	    constructor(name,age){
+	        this.name=name;
+	        this.age=age;
+	    }
+	 }
+
+let obj=new Demo("Rahul",23);
+
+2. Read operation
+
+  - Entire object
+     console.log(car)
+  
+  - Individual properties
+     console.log(car["brand"]);
+     console.log(car.color);
+
+3. Update
+     car.color="Black"
+
+4. Delete
+    delete car.price
+    we cannot delete entire obj can delete only properties
+
+
+//This keywords scenarios
+In global(window),blocks(window), object{2 scenario => arrow function(window), regular function(curr obj)}, object(nested functions{2 scenario => arrow function(curr)because of lexical scoping, regular function(window obj)}
+
+//call apply bind
+- Ways to bind current obj with this keyword
+- All 3 used to link this with any external object (*compulsory we should use regular funct not arrow)
+- Call and apply has only different syntax
+- Bind will have same syntax as call but bind will return reference of function for future use.
+
+
+
+//String 
+- In js string we can access char using indexes ex. str[0]
+- trimStart = -Remove extra spaces from start   
+- trimend = Remove extra spaces 
+- trim - both end remove
+- toUpperCase
+- toLowerCase
+- includes
+- padStart
+- padEnd
+- slice
+- subString
+- substr
+- replace
+- replaceAll
+- split
+- length
+- startsWith
+- endsWith
+- toString
+- indexOf
+- lastIndexOf
+- at
+- charAt
+- charCodeAt
+
+// Array
+-
+
+prototype,shalow deep
+
+//Destructuring => 
+
+
+
+
+
+
