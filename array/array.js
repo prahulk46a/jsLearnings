@@ -16,7 +16,7 @@
 // //CRUD
 
 // //Create
-// let car=["porshe","alto","safari","Curvv","Drive","Wagonr"];
+let car=["porshe","alto","safari","Curvv","Drive","Wagonr"];
 
 // //add
 // console.log("push method");
@@ -27,10 +27,8 @@
 // //remove last 
 // console.log("pop method");
 // let popped=car.pop();
-// let popped2=car.pop(5);//popped element at 5th index
 // console.log(car);//
 // console.log(popped);//omni
-// console.log(popped2);
 
 // //remove first
 // console.log("Shift method");
@@ -98,23 +96,23 @@ let ans=data.map((val)=>{
 });
 console.log(ans);
 
-//filter=> will get filtered array based on condition
-let fitered=data.filter((val)=>
+//filter()=> will get filtered array based on condition
+let filtered=data.filter((val)=>
     // if(val.age<30){
          val.age<30 //you cannot return custom, filter will return current iteration 
                         //i.e in this case entire obj even we are fetching name 
     // }
 );
 
-//if we dont want to use curley braces to hof then it will implicitly returns just don't return. ex. val=>val>10
-console.log(fitered);
+//if we dont want to use curly braces to hof then it will implicitly returns just don't return. ex. val=>val>10
+console.log(filtered);
 
-//reduce=> Reduces an array to single value by executing logic 
+//reduce() => Reduces an array to single value by executing logic 
 //reduce(clb(accumulator,value,index,array),initial value of accumulator=> default arr[0])=> 4 arguments can be passed
 let sum=num.reduce(((acc,num)=>acc+num),100);
 console.log(sum);//169+100=269
 
-// sort=> will modify sorted array and return
+// sort() => will modify sorted array and return
 let sortedDigitWise=num.sort();//sort all on basis of digits ex. 100,10,20 like this
 console.log(sortedDigitWise);
 let sorted=num.sort((a,b)=>a-b)//sort 10,20,100 in a-b=> increasing b-a=> decreasing
@@ -128,3 +126,25 @@ console.log(finded);//42 1st occ in num greater than 30
 
 let findName=data.find(val=>val="Rahul");
 console.log(findName);
+
+//isArray()=> checks if passed val is array or not
+let checkArray=Array.isArray(num);//true
+console.log(checkArray);
+
+//from()=> converts string into array
+let str="Rahul"
+let cnvArray=Array.from(str);//['R','a','h', 'u', 'l']
+console.log(cnvArray); 
+
+//join()=> join array into string 
+let originalStr=cnvArray.join('');
+console.log(originalStr);
+
+// splice() => splice(start: number, deleteCount: number, ...items: []): newArray[]
+let arr=["start","center","end"];
+arr.splice(1,1,"mid");
+console.log(arr);
+
+// delete
+delete arr[1];//deletes arr[1] but didn't remove index 
+console.log(arr);// ['start', empty, 'end']

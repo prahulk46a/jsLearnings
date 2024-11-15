@@ -3,7 +3,7 @@
 // //cbf=> Function which is passed to hof is called call back function(cbf)
 // simple function are hoisted hence can be access before declaring hence function assigning came into picture and arrow functions too
 
-
+ 
 // let hof=(a)=>{
 //     console.log(a);
 // }
