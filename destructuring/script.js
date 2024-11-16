@@ -56,6 +56,7 @@ let sum=(a,b,c)=>{
 }
 console.log(sum(...arr3));//internally sum(10,20,30)
 
+//
 
 
 

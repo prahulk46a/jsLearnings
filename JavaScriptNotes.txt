@@ -211,8 +211,11 @@ In global(window),blocks(window), object{2 scenario => arrow function(window), r
 - Call and apply has only different syntax
 - Bind will have same syntax as call but bind will return reference of function for future use.
 
+//Prototypes
 
-
+//Shallow copy-Deep copy
+- Shallow => copy array changes will be reflected in original array
+- deep=> copy array changes will not be reflected in original array
 // String 
 - In js string we can access char using indexes ex. str[0]
 - trimStart = -Remove extra spaces from start   
@@ -240,9 +243,26 @@ In global(window),blocks(window), object{2 scenario => arrow function(window), r
 - charCodeAt
 
 // Array
--
-
-prototype,shalow deep
+- flat(depth)=> Flattens array upto nested depth and return
+- push => add new element to end and returns new length
+- pop=> removes element from last and return that element
+- shift=> removes element from first and returns 
+- unshift=> add to from start and return new length
+- slice=> slice(start,end)=> returns new array sliced from start ro end-1
+- splice=> modifiable slice method=> will modify array=>(start,length,replaceWith)
+- forEach=> Used to iterate over array and it will not return anything
+- map=> Similar to forEach will return array which will get modified
+- reverse => reverse array
+- filter => will get filtered array based on condition
+- reduce => Reduces an array to single value by executing logic
+	//reduce(clb(accumulator,value,index,array),initial value of accumulator=> 
+	default arr[0])=> 4 arguments can be passed.
+- sort=>  will modify sorted array and return
+- find=> similar to filter but filter will check for entire array and 
+	find will match 1st time and return from that point only.
+- Arrays.isArray=> returns true if passed arg is an array
+- join("Seprator")=> joins all element with seprator  and returns string 
+- from=> converts string into array
 
 //Destructuring => 
 

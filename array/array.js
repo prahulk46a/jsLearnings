@@ -53,6 +53,10 @@ let car=["porshe","alto","safari","Curvv","Drive","Wagonr"];
 // let newCarSplice=car.splice(2,2);
 // console.log(car);
 // console.log(newCarSplice);//['safari', 'Curvv']
+// // splice() => splice(start: number, deleteCount: number, ...items: []): newArray[]
+// let arr=["start","center","end"];
+// arr.splice(1,1,"mid");
+// console.log(arr);
 
 // //for each
 // // car.forEach((element) => {
@@ -140,10 +144,7 @@ console.log(cnvArray);
 let originalStr=cnvArray.join('');
 console.log(originalStr);
 
-// splice() => splice(start: number, deleteCount: number, ...items: []): newArray[]
-let arr=["start","center","end"];
-arr.splice(1,1,"mid");
-console.log(arr);
+
 
 // delete
 delete arr[1];//deletes arr[1] but didn't remove index 
