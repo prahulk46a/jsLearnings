@@ -83,6 +83,7 @@ let {theme,...rest}=setting;
 console.log(rest);
 console.log(theme);
 
+
 //11
 const originalArray=[1,2,3];
 let newArray=[...originalArray];
@@ -113,9 +114,50 @@ console.log(end);
 
 //14
 const car = { 
-        make: "Toyota", 
-        model: "“Corolla”" 
+    make: "Toyota", 
+    model: "Corolla" 
 };
-console.log();
+const copiedCar={...car};
+copiedCar.model="camry";
+console.log(car);
+console.log(copiedCar);
 
+//15
+const defaultSetting={volume:50,brightness:50};
+const userSetting={volume:30};
 
+const mergeSetting={...defaultSetting,...userSetting};
+console.log(mergeSetting);
+
+//16
+function sum(a,b,c){
+    return a+b+c;
+}
+let num=[1,2,3];
+console.log(...num);
+
+//17
+function calculateTotal(...price){
+    return price.reduce((arg,price)=>arg+price,0);
+}
+console.log(calculateTotal(5,10,15));
+
+//18
+function combinneArray(...array){
+    return [].concat(...array);
+}
+console.log(combinneArray([10,20],[30,40]));
+
+//19
+const num2=[1,2,3,4,5]
+const[one,...other]=num2;
+console.log(other);
+
+//20
+const config={host:"localhost",port:3030,user:"admin",password:"1234"}
+const{host,port,...restConfig}=config;
+const modifiedConfiguration={...restConfig,user:"NewUser"};
+console.log(host);
+console.log(port);
+console.log(restConfig);
+console.log(modifiedConfiguration);
