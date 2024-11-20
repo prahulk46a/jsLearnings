@@ -267,6 +267,10 @@ In global(window),blocks(window), object{2 scenario => arrow function(window), r
 //Destructuring => 
 
 
+# Asynchronous programming
+//timers
+
+//promises
 
 
 

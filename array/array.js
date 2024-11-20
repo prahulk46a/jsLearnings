@@ -149,3 +149,8 @@ console.log(originalStr);
 // delete
 delete arr[1];//deletes arr[1] but didn't remove index 
 console.log(arr);// ['start', empty, 'end']
+
+
+
+
+
