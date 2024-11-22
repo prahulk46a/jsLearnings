@@ -1,4 +1,4 @@
-// //Promise=> It is javascript object.
+// //Promise=> It is javascript object.It is used to achieve async programming.
 // console.log("Start");
 // let value=prompt("Enter value");
 // let p=new Promise((resolve,reject)=>{

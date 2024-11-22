@@ -13,4 +13,8 @@
 
 
 
-
+let func=(val)=>{
+    val;
+};
+let ex=func(25);
+console.log(ex);
