@@ -34,17 +34,41 @@
 
 
 // Iterating on dom collection ele 
-let allDivs=document.getElementsByTagName("div");
-console.log(allDivs);
-//allDivs.style is not possible as it is collection 
-for(let i=0;i<allDivs.length;i++){
-    if(i%2){
-        allDivs[i].style.color="green";
-    }
-    else{
-        allDivs[i].style.color="blue";
-    }
+// let allDivs=document.getElementsByTagName("div");
+// console.log(allDivs);
+// //allDivs.style is not possible as it is collection  allDivs.map is also not possible 
+// for(let i=0;i<allDivs.length;i++){
+//     if(i%2){
+//         allDivs[i].style.color="green";
+//     }
+//     else{
+//         allDivs[i].style.color="blue";
+//     }
+// }
+
+// allDivs.array.forEach(element => {
+//     element.style.color="red";
+// });
+
+// //chaining and inner html
+// let main=document.querySelector("main");
+// let div1=document.createElement('div').style.color="red";
+// main.innerHTML=`<div style="color:red">
+// Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium
+// officiis recusandae praesentium atque sint est doloremque nobis deleniti
+// optio vero!
+// </div>
+// <div>
+// Minus saepe est quisquam, repellendus nostrum vitae ut repudiandae
+// blanditiis explicabo numquam quibusdam non ea recusandae illo possimus rem
+// necessitatibus.
+// </div>`
+// main.appendChild(div1);
+// console.log(main);
+
+
+let main=document.querySelector('main')
+let removeEle=()=>{
+    console.log("Element removed");
+    main.remove();
 }
-
-
-
