@@ -268,18 +268,11 @@ In global(window),blocks(window), object{2 scenario => arrow function(window), r
 
 
 # Asynchronous programming
-//timers
 
+//timers
+while using for with setTimeout var will print 10 times 10 but when use let it will print 0->10 as var is function scope it will update same location but let is 
 //promises
 
 
 
 
-// Dom
-- Document object will create model of of html objects inside init.
-- Actually dom is created in the form of Document object
-- getElementById=> Will matches that id
-- getElementsByTag=> gives multiple html children collection
-- gerElementsByClass=> Gives all matching html children collection
-- querySelector=> returns 1st matched query that could be id(#), class(.), tagname
-- querySelectorByAll=> returns nodes list that matches query
