@@ -17,14 +17,14 @@ JavaScript
 - Scripting Language	
 
 
-//Tokens smallest units of any programing language
+//Tokens smallest units of any programming language
 - Keywords=> var, let, const, if, else, continue, console, log, for, switch, break, while do, for each => predefined, cannot used as identifiers, 
 - Identifiers=> Name given to variables by programmer => special case cant used except $ and _. cant start with no, cant use space between 2 words 
 - Punctuators/separator=> Special char or symbols which has some specific meaning ex. , : ; "" `` {} ()
 - Operators=> Special char which are use to perform operations between operands arithmetic, assignment, bitwise, typeOf, ternary , equality compare(loosely, Strictly)
 - Literals => 
-
-//Literals => Datatypes=> Primitives - one which cannot further breakdown
+  
+//Literals => Datatype=> Primitives - one which cannot further breakdown
 	      User defined - collection of both  primitive as well as user defined as single dt type
 - Number and BigInt => Range of number -(2^53-1)>x>(2^53-1) beyond that we store in bigint (a=10n)
 - Boolean true or false =>
@@ -39,7 +39,7 @@ JavaScript
 
 
 
-//var let const => every operation (Declaration, Initialization, declaration+ initialization, redeclaration, Re initialization) is possible with var but in let we cannot redeclare whereas in const only declaration + initialization possible
+//var let const => every operation (Declaration, Initialization, declaration+ initialization, re-declaration, Re initialization) is possible with var but in let we cannot redeclare whereas in const only declaration + initialization possible
 
 
 
@@ -105,15 +105,15 @@ Types of function:
 - let and const doesn't allow to access when they are in temporal dead zone hence it will get error if we access before initialization
 
 
-//Hoisting
+// Hoisting
 - Variable declared in declaration phase taking to execution phase is hoisting
 - let, Var, const all 3 are hoisted 
 - ability to move variable declared in top of execution context  
 
-//lexical scoping
+// lexical scoping
 - The ability of js to search for variables in the outer function/parent function.
 
-closures
+// Closures
 - Closure is separate memory allocation 
 - if we are trying to access variables in child function from parent function then we are able to do that because of closure.
 - closure will get created for only functions. when variables are required from parent function  then only closure will store variable
@@ -216,6 +216,8 @@ In global(window),blocks(window), object{2 scenario => arrow function(window), r
 //Shallow copy-Deep copy
 - Shallow => copy array changes will be reflected in original array
 - deep=> copy array changes will not be reflected in original array
+
+
 // String 
 - In js string we can access char using indexes ex. str[0]
 - trimStart = -Remove extra spaces from start   
@@ -243,26 +245,24 @@ In global(window),blocks(window), object{2 scenario => arrow function(window), r
 - charCodeAt
 
 // Array
-- flat(depth)=> Flattens array upto nested depth and return
+- flat(depth) => Flattens array up to nested depth and return
 - push => add new element to end and returns new length
-- pop=> removes element from last and return that element
-- shift=> removes element from first and returns 
-- unshift=> add to from start and return new length
-- slice=> slice(start,end)=> returns new array sliced from start ro end-1
-- splice=> modifiable slice method=> will modify array=>(start,length,replaceWith)
-- forEach=> Used to iterate over array and it will not return anything
-- map=> Similar to forEach will return array which will get modified
+- pop => removes element from last and return that element
+- shift => removes element from first and returns 
+- Unshift => add to from start and return new length
+- slice => slice(start,end)=> returns new array sliced from start ro end-1
+- splice => modifiable slice method=> will modify array=>(start,length,replaceWith)
+- forEach => Used to iterate over array and it will not return anything
+- map => Similar to forEach will return array which will get modified
 - reverse => reverse array
 - filter => will get filtered array based on condition
 - reduce => Reduces an array to single value by executing logic
-	//reduce(clb(accumulator,value,index,array),initial value of accumulator=> 
-	default arr[0])=> 4 arguments can be passed.
-- sort=>  will modify sorted array and return
-- find=> similar to filter but filter will check for entire array and 
-	find will match 1st time and return from that point only.
-- Arrays.isArray=> returns true if passed arg is an array
-- join("Seprator")=> joins all element with seprator  and returns string 
-- from=> converts string into array
+	//reduce(clb(accumulator,value,index,array),initial value of accumulator=> default arr[0]) => 4 arguments can be passed.
+- sort =>  will modify sorted array and return
+- find => similar to filter but filter will check for entire array and find will match 1st time and return from that point only.
+- Arrays.isArray => returns true if passed arg is an array
+- join("Seprator") => joins all element with seprator  and returns string 
+- from => converts string into array
 
 //Destructuring => 
 

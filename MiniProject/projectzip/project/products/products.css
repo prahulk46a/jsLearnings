@@ -1,0 +1,48 @@
+main {
+  display: flex;
+  color: white;
+}
+main > aside {
+  width: 30vw;
+  background: #444444;
+  height: 90vh;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main > section {
+  width: 70vw;
+  background: #666666;
+  height: 90vh;
+}
+#productDiv {
+  width: 85%;
+  background: #7b7b7b;
+  padding: 30px;
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+#productDiv>button{
+width: 100%;
+padding: 10px;
+border-radius: 5px;
+border: none;
+}
+
+#singleProduct{
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  gap: 10px;
+
+}
+#singleProduct>img{
+  width:500px;
+  border: black;
+}

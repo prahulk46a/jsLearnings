@@ -1,0 +1,33 @@
+article {
+  width: 100%;
+  background: rgb(108, 108, 108);
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  gap: 80px;
+}
+article > h1 {
+  font-size: 60px;
+  /* margin: 30px; */
+}
+article > form {
+  display: flex;
+  /* gap: 10px; */
+  align-items: center;
+  flex-direction: column;
+}
+article > form > input,
+article > form > button {
+  padding: 10px 10px;
+  width: 30vw;
+}
+article>form>p{
+    margin-top: 20px;
+}
+article>form>p>a{
+    color: white;
+  
+}
