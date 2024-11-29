@@ -281,3 +281,13 @@ while using for with setTimeout var will print 10 times 10 but when use let it w
 //events
 1. click=>
 2. 
+
+Modules=>
+- Used to import and export repetitive block of code
+- In html you have to mention type=module in script target
+- Even if you dont mention exported script in html the imported script will find in directory and get required thing from script
+- Internally exporting and importing module is using immediate invoke function.
+	Types=> - Named export => Same name while importing and curly braces compulsory
+			- Default export => - Any name while importing no need of same name  no curly braces needed, have to use default keyword
+			- Can send only one object
+			
