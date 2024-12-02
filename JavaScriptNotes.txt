@@ -1,30 +1,31 @@
 JavaScript
-//History
+// History
 - Brendon Eich 1995 Js founder
 - Mocha first name=> live script=> JavaScript=> ECMAScript 
 - Netscape company=> Netscape Navigator.
 - ES6 most popular version
 
-//Feature  of JavaScript
+// Feature  of JavaScript
 - Synchronous
 - High level	(understandable for both human as well as machine)
 - Interpreted	(interpreter task is to run code line by line)
 - Single threaded
-- Object Based/ Object Oriented		(everything is object)
-- Loosely Type			
-- Dynamically typed			
+- Object Based (everything is object)
+- Object Oriented		
+- Loosely Type=> Does not enforce strict type rules.			
+- Dynamically typed	=> JS Engine allows variables to hold values of any data type at runtime. This allows type coercion
 - Case Sensitive
 - Scripting Language	
 
 
-//Tokens smallest units of any programming language
+// Tokens smallest units of any programming language
 - Keywords=> var, let, const, if, else, continue, console, log, for, switch, break, while do, for each => predefined, cannot used as identifiers, 
 - Identifiers=> Name given to variables by programmer => special case cant used except $ and _. cant start with no, cant use space between 2 words 
 - Punctuators/separator=> Special char or symbols which has some specific meaning ex. , : ; "" `` {} ()
 - Operators=> Special char which are use to perform operations between operands arithmetic, assignment, bitwise, typeOf, ternary , equality compare(loosely, Strictly)
 - Literals => 
   
-//Literals => Datatype=> Primitives - one which cannot further breakdown
+// Literals => Datatype=> Primitives - one which cannot further breakdown
 	      User defined - collection of both  primitive as well as user defined as single dt type
 - Number and BigInt => Range of number -(2^53-1)>x>(2^53-1) beyond that we store in bigint (a=10n)
 - Boolean true or false =>
@@ -33,15 +34,10 @@ JavaScript
 - String
 - Symbol=> Using symbols are unique. i.e. even if we value of 2 symbols is same but still it will be unique (== shows false)
 
-//Internals of JS
+//  Internals of JS
 - Number will directly converted into binary but char will be converted to char-> asci-> hex -> binary
-- JS file embedded in html file=> js engine =>Inside js engine there will be parser that will parse js code into chunks and stored in tree like structure AST(Abstract structure tree)=>each chunk is passed to just in time compiler to compile and convert into byte code and sent to interpreter => Interpreter converts byte code to machine understandable code=> processor will process code and gets o/p. 
-
-
-
-//var let const => every operation (Declaration, Initialization, declaration+ initialization, re-declaration, Re initialization) is possible with var but in let we cannot redeclare whereas in const only declaration + initialization possible
-
-
+- JS file embedded in html file=> js engine =>Inside js engine there will be parser that will parse js code into chunks and stored in tree like structure AST(Abstract structure tree)
+  =>each chunk is passed to just in time compiler to compile and convert into byte code and sent to interpreter => Interpreter converts byte code to machine understandable code=> processor will process code and gets o/p. 
 
  
 
@@ -52,26 +48,27 @@ JavaScript
 - Immediate Invoke function expression(IIFE)//immediate popups this kind of scenarios use this type of function ex. cookies, ad => (()=>{”This is immediate invoke function”}) (). function declaration + call on same line
 
 
-
-
-//prompt=> Similar to scanner to take inputs
+// prompt=> Similar to scanner to take inputs
 - when you cancel prompt it gives null.
 - Default input type String
 
-//backticks
+
+// Backticks
 ` This is string declare using backticks${}` => this is called as “template literals” and writing js in that string using ${} is called as interpolation
+
 
 // Heap 
 - Window is parent object it contains multiple nested objects
 - Window obj stored in heap area like other and is super obj of other obj 
 - Dom is inside window obj 
 - all first gen child of window obj we can directly access by name ex. window.alert() = alert()(achieved using destructuring)
-- all non primitive datatypes stored inside window obj
+- all non primitive datatype stored inside window obj
 - variables declared using in global scope are also stored into window obj
 
 // Call stack
 - It has Global execution context(GEC) => will have 2 diff part/phases => variable declaration phase and execution phase
--  
+- For every function call function execution phase will be added into call stack.
+- 
 
 
 // Scopes=>
@@ -94,14 +91,14 @@ Types of function:
 
 // Temporal Dead zone
 - Time span in between variable declaration(1) and initialization(2) is temporal dead zone
-
- |  VD	    |	    exp		|
+  
+ |  VD	    |	    exp		    |	
  | var a;(1)|    clg(start);	|
- | var y;   |    a=100;	(2)	|	
+ | var y;   |    a=100;	(2)	    |	
 
 // Memory allocation in main GEC for var let const
 - Variable declared using var will get memory in heap(window area) where as for let and const it will store into gec itself only and will get destroyed as soon as call is over. Hence we get undefined for var even declared after accessing.
-- this is variable which is assign to window object in js i.e. var this=window
+- this is variable which is assign to window object by default in js i.e. var this=window
 - let and const doesn't allow to access when they are in temporal dead zone hence it will get error if we access before initialization
 
 
@@ -111,13 +108,17 @@ Types of function:
 - ability to move variable declared in top of execution context  
 
 // lexical scoping
-- The ability of js to search for variables in the outer function/parent function.
+- The ability of js to search for variables in the outer function/parent function. 
+  ex.let outerVar = "I am from outer";
+  function inner() {
+    console.log(outerVar); // Accessible due to lexical scope
+  }
 
 // Closures
 - Closure is separate memory allocation 
-- if we are trying to access variables in child function from parent function then we are able to do that because of closure.
-- closure will get created for only functions. when variables are required from parent function  then only closure will store variable
-- It is the memory allocation which will store variables that we are trying to access in child function but declared in parent function. Closure will be created even if the parent function is removed from the call stack
+- If we are trying to access variables in child function from parent function then we are able to do that because of closure.
+- Closure will get created for only functions. when variables are required from parent function  then only closure will store variable.
+- It is the memory allocation which will store variables that we are trying to access in child function but declared in parent function. Closure will be created even if the parent function is removed from the call stack.
 
 
 
@@ -211,9 +212,9 @@ In global(window),blocks(window), object{2 scenario => arrow function(window), r
 - Call and apply has only different syntax
 - Bind will have same syntax as call but bind will return reference of function for future use.
 
-//Prototypes
+// Prototypes
 
-//Shallow copy-Deep copy
+// Shallow copy-Deep copy
 - Shallow => copy array changes will be reflected in original array
 - deep=> copy array changes will not be reflected in original array
 
@@ -258,7 +259,7 @@ In global(window),blocks(window), object{2 scenario => arrow function(window), r
 - filter => will get filtered array based on condition
 - reduce => Reduces an array to single value by executing logic
 	//reduce(clb(accumulator,value,index,array),initial value of accumulator=> default arr[0]) => 4 arguments can be passed.
-- sort =>  will modify sorted array and return
+- sort =>  Will modify sorted array and return
 - find => similar to filter but filter will check for entire array and find will match 1st time and return from that point only.
 - Arrays.isArray => returns true if passed arg is an array
 - join("Seprator") => joins all element with seprator  and returns string 
@@ -269,25 +270,37 @@ In global(window),blocks(window), object{2 scenario => arrow function(window), r
 
 # Asynchronous programming
 
-//timers
-while using for with setTimeout var will print 10 times 10 but when use let it will print 0->10 as var is function scope it will update same location but let is 
+// Timers
+while using for with setTimeout var will print 10 times 10 but when use let it will print 0->10 as var is function scope it will update same location but let is block scope hence it will update into diff instance of i.
+
+
 //promises
 
 
+//Async await
 
 
-//Dom
+// Dom
 
 //events
 1. click=>
 2. 
 
-Modules=>
+// Modules=>
 - Used to import and export repetitive block of code
 - In html you have to mention type=module in script target
 - Even if you dont mention exported script in html the imported script will find in directory and get required thing from script
 - Internally exporting and importing module is using immediate invoke function.
-	Types=> - Named export => Same name while importing and curly braces compulsory
-			- Default export => - Any name while importing no need of same name  no curly braces needed, have to use default keyword
-			- Can send only one object
-			
+	Types=> - Named export => 
+				- Same name while importing and curly braces compulsory
+				- Exporting do not need default keyword
+				- Can send multiple objects in single file.
+				- Can be exported on same line of variable declaration 
+			- Default export => 
+				- Any name while importing no need of same name , no curly braces needed.
+				- Have to use default keyword.
+				- Can use default only once hence can send only one wrapped object.
+				- Default keyword should not be on same line of variable declaration
+
+//			
+

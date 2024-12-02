@@ -8,7 +8,7 @@ let credentials = {
 };
 
 username.addEventListener("input", (e) => {
-  credentials.user = e.target.value;
+  credentials.user = e.target.value;//user= targeted event value will get stored
 //   console.log(credentials);
 });
 password.addEventListener("input", (e) => {
@@ -21,7 +21,6 @@ btn.addEventListener('click', (e)=>{
         localStorage.setItem('username', credentials.user)
         localStorage.setItem('password', credentials.pass)
         console.log(localStorage);
-        
     }
 })
 

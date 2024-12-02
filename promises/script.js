@@ -13,7 +13,7 @@
 //     console.log("Matches expected value");
 // });
 // p.catch(()=>{console.log("Unexpected value")
-// });
+// // });
 // p.finally(()=>{
 //     console.log("Execution complete");
 // })
@@ -63,39 +63,40 @@
 //     })
 // });
 
+//promiseout=>promisin=>json=>data
 
-//if you return from then() then it will passed to next then as a parameter 
-//p1.then(()=>{return res}).then((res2)=>{return res2}).then((res3)=>{clg res3).catch()
-//at any point then get error it will call catch .All then will get executed even if no then returns in between
-//chaining 
-// let x=10;
-// let p=new Promise((resolve,reject)=>{
-//     if(x==10){
-//         resolve(x);
-//     }
-//     else{
-//         reject("Number is not 10");
-//     }
-// }).then((res)=>{return res*10}).then((res2)=>{console.log("This is return 2");return res2*10}).then((res3)=>{console.log(res3);}).catch((rej)=>{console.log(rej);})
-// //.then((res)=>{return res*10}).then((res2)=>{console.log("This is return 2");return res2*10}).then((res3)=>{console.lo(res3);}).catch((rej)=>{console.log(rej);})//will get catch executed as in last block lo is written instead of log
+// if you return from then() then it will passed to next then as a parameter 
+// p1.then(()=>{return res}).then((res2)=>{return res2}).then((res3)=>{clg res3).catch()
+// at any point then get error it will call catch .All then will get executed even if no then returns in between
+// chaining 
+let x=10;
+let p=new Promise((resolve,reject)=>{
+    if(x==10){
+        resolve(x);
+    }
+    else{
+        reject("Number is not 10");
+    }
+}).then((res)=>{return res*10}).then((res2)=>{console.log("This is return 2");return res2*10}).then((res3)=>{console.log(res3);}).catch((rej)=>{console.log(rej);})
+//.then((res)=>{return res*10}).then((res2)=>{console.log("This is return 2");return res2*10}).then((res3)=>{console.lo(res3);}).catch((rej)=>{console.log(rej);})//will get catch executed as in last block lo is written instead of log
 
 
 
-//
-let clickButton=()=>{
-    // let fetching=fetch('http://api.github.com/users');
-    let data;
-    setTimeout(()=>{
-        data=[{},{},{}];
-    },500)
+// //
+// let clickButton=()=>{
+//     // let fetching=fetch('http://api.github.com/users');
+//     let data;
+//     setTimeout(()=>{
+//         data=[{},{},{}];
+//     },500)
 
-    let p5=new Promise((res,rej)=>{
-        setTimeout(()=>{if(Array.isArray(data)){
-            res(data);
-        }
-        else{
-            reject("Data is not api");
-        }},1000);
-    }).then((resp)=>{console.log(resp);}) //this resp is coming from response(parameter)
-}
+//     let p5=new Promise((res,rej)=>{
+//         setTimeout(()=>{if(Array.isArray(data)){
+//             res(data);
+//         }
+//         else{
+//             reject("Data is not api");
+//         }},1000);
+//     }).then((resp)=>{console.log(resp);}) //this resp is coming from response(parameter)
+// }
 
