@@ -41,11 +41,7 @@ JavaScript
 
 // short circuits in js
 
-// Ways to define function
-- Simple function 
-- Function as expression
-- Arrow function 
-- Immediate Invoke function expression(IIFE)//immediate popups this kind of scenarios use this type of function ex. cookies, ad => (()=>{”This is immediate invoke function”}) (). function declaration + call on same line
+
 
 
 // prompt=> Similar to scanner to take inputs
@@ -81,12 +77,23 @@ as soon as function get called immediate another call stack will get created for
 	   - Arguments are passed as parameter first as soon as function get call and after that it will start executing code 
 Types of function:
 	- Simple function
-	- Arrow function=> Way to write functions more clear=> (parameters)=>{ //Body }
+	- Arrow function=> - Way to write functions more clear=> (parameters)=>{ //Body } 
+					   - Implicit return for single line of code ex. let add=()=>(num1+num2); 
+					   - Arrow functions do not create their own this binding i.e this inside arrow function will give empty obj
+    	Key Difference: Regular Function vs Arrow Function => (explaination D:\Frontend\JavaScript\InterviewQuestions\this-keyword\question1.js)
+			Regular Function: this depends on how the function is called. In the global context, this refers to the global object (window in browsers).
+			Arrow Function: this is lexically bound and always refers to the this of the outer (enclosing) scope when the function is created. It doesn't have its own this
+			
 	- Higher order functions=> Function which expects another function as an argument is HOF
+
 	- Callback functions=> And function which is passed as argument inside function parameters is callback function.
+
 	- Anonymous function=> Function which doesn't have name is anonymous function.
+
 	- JavaScript currying()() function will immediate invoke calling output function on same line 
 	  when we are returning nested function instead of storing that returned function into new variable we can immediately call that returned function using js currying.
+	
+	- Immediate Invoke function expression(IIFE)//immediate popups this kind of scenarios use this type of function ex. cookies, ad => (()=>{”This is immediate invoke function”}) (). function declaration + call on same line
 
 
 // Temporal Dead zone
