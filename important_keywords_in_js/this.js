@@ -44,8 +44,6 @@ function f1(){
 
 
 
-
-
 let obj3={
     name:"Akanksha",
     age:24

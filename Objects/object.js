@@ -38,7 +38,7 @@ console.log(example3);
 
 
 
-//5. using constructor function=> as soon as we use this in function it will can be treated as class 
+//5. using constructor function => as soon as we use this in function it will can be treated as class 
 function Student(name,age){
     this.name=name;
     this.age=age;

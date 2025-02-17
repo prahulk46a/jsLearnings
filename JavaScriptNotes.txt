@@ -39,7 +39,7 @@ JavaScript
 - JS file embedded in html file=> js engine =>Inside js engine there will be parser that will parse js code into chunks and stored in tree like structure AST(Abstract structure tree)
   =>each chunk is passed to just in time compiler to compile and convert into byte code and sent to interpreter => Interpreter converts byte code to machine understandable code=> processor will process code and gets o/p. 
 
- 
+// short circuits in js
 
 // Ways to define function
 - Simple function 

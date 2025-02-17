@@ -6,13 +6,16 @@ console.log(firstColor);
 //2
 const numbers=[1,2,3,4,5];
 const[first,,third]=numbers
-console.log(first);
-console.log(third);
+console.log(first); //1
+console.log(third); //3
 
 //3
 const matrix=[[1,2],[3,4],[5,6]];
 const[[a1,a2],a3]=matrix
-console.log(a1);
+console.log(a1); //1
+console.log(a3); //[3,4]
+
+
 
 //4
 // const user ={
@@ -22,7 +25,7 @@ console.log(a1);
 // };
 // console.log(user);
 // let{name,age,add} = user;
-// console.log(name,age,add);
+// console.log(name,age,add); // Alice 30 Wonderland
 
 //5
 const point={
@@ -45,12 +48,12 @@ console.log(author);
 
 // //7
 // let person1={name:"Rahul",age:23,country:"India"};
-// let getProfile=({name,age,country})=>{
+// let getProfile=({name,age,country})=>{   //Instead of passing obj we pass destructured obj elements=> useful as no need to write person1.age like this.
 //     console.log(country);
 // }
 // getProfile(person1);
 
-//8
+//8 nested destructuring
 const person2={
     name:"Bob",
     details:{
@@ -66,10 +69,10 @@ let{name,details:{age,address:{city,country}}}=person2;
 console.log(name,age,city,country);
 
 
-//9
+//9 Rest
 let arr=["a","b","c","d","e","f"];
 let [p,...q]=arr;
-console.log(q);
+console.log(q);//["b","c","d","e","f"]
 
 
 //10
@@ -84,9 +87,9 @@ console.log(rest);
 console.log(theme);
 
 
-//11
+//11 Spread... 
 const originalArray=[1,2,3];
-let newArray=[...originalArray];
+let newArray=[...originalArray]; 
 newArray.push(4);
 console.log(newArray);
 console.log(originalArray);//not affects to original arr
