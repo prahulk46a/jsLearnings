@@ -169,3 +169,28 @@ Promise.any([p8, p9]).then((value) => {
   console.log(value); // "Two"
   //First fulfilled returned but ignores rejected
 });
+
+//Trick cases=> 1
+
+let prom = new Promise((resolve, reject) => {
+  console.log("Inside promise");
+
+  // Long-running synchronous task
+  for (let i = 0; i < 1e9; i++) {} // Simulating a Synchronous heavy task
+
+  resolve("Done!"); // Resolves after loop completes
+});
+
+console.log("Promise object:", prom); // This promise will not console anything (not even pending) until resolve get called.
+// Synchronous Block of code will get executed line by line if asynchronous task like setTimeOut or promise is there then it will skip and execute synchronous tasks
+
+//Case 2
+let prom2 = new Promise((resolve, reject) => {
+  console.log("Inside promise");
+
+  setTimeout(() => {
+    resolve("Done!");
+  }, 5000);
+});
+
+console.log("Promise object:", prom2); //This will give Promise in pending state
