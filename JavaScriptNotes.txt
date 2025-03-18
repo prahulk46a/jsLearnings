@@ -85,9 +85,14 @@ Types of function:
 			Regular Function: this depends on how the function is called. In the global context, this refers to the global object (window in browsers).
 			Arrow Function: this is lexically bound and always refers to the this of the outer (enclosing) scope when the function is created. It doesn't have its own this
 			
-	- Higher order functions=> Function which expects another function as an argument is HOF
+	- Higher order functions=> Function which expects another function as an argument or function that returns another function  is HOF
 
 	- Callback functions=> And function which is passed as argument inside function parameters is callback function.
+					Problems in Callback=> 1. Call Back hell => Passing Function into function and nested again function to that funct
+											    func(func(func(....))) This is readability problem.
+										   2. Inversion of Control(IOC) => There is no assurance whether that function is used or not.
+										   							  Functionality of your code depends on other i.e control of your code goes to other one this is IOC
+																	  ex. Team a and Team b is there team a write main func and team b write logic inside callback funct. if callback function(team b) is changed then that causes problem in team A also.
 
 	- Anonymous function=> Function which doesn't have name is anonymous function.
 
@@ -284,7 +289,48 @@ while using for with setTimeout var will print 10 times 10 but when use let it w
 
 //promises
 - The Promise object represents the eventual completion (or failure) of an asynchronous operation and its resulting value.
-- 
+- Why promises needed??=> Before Promises, JavaScript relied heavily on callbacks for handling asynchronous operations (e.g., fetching data, reading files, or handling user input). 
+						However, callbacks had several problems like callback hell, IOC, no error handling, inconsistent data handling.
+- Solutions=> 1. Eliminates callback hell → Chaining (.then()) makes code readable.
+			  2. Built-in error handling → .catch() simplifies error handling.
+			  3. Predictable execution → Promises always execute in the correct order.
+			  4. Composability → We can chain multiple async operations easily.
+			  
+example=> Callback hell
+		  getUser(1, (user) => {
+			  getOrders(user, (orders) => {
+				    getOrderDetails(orders[0], (details) => {
+				    	console.log(details);
+			    	});
+			  });
+		  });
+
+//promises
+getUser(1)
+  .then(getOrders)
+  .then(getOrderDetails)
+  .then(console.log)
+  .catch(console.error);
+
+- An object that is used as a placeholder for the eventual results of a deferred (and possibly asynchronous) computation.
+- Promises are one of these 3 states=> 1.pending: initial state, neither fulfilled nor rejected.
+									   2.fulfilled: meaning that the operation was completed successfully .
+									   3.rejected: meaning that the operation failed.
+
+- Promise resolved means operation completed whether that could be successful or failed.Finally block will get called when resolved sucessfully.
+- Promise Methods=> 
+		1.Promise.all() => - Static method takes an iterable of promises as input and returns a single Promise. 
+						- This returned promise fulfills when all of the input's promises fulfilled including when empty iterable is passed.
+						- It rejects when any of the input's promises rejects, with this first rejection reason
+		2.Promise.allSettled() => - Static method takes an iterable of promises as input and returns a single Promise.
+						- This returned promise fulfills when all of the input's promises settle(both rejected and fulfilled)(including when an empty iterable is passed), 
+						  with an array of objects that describe the outcome of each promise.
+						- Wait for all even if some failed
+						- Return value=>  { status: 'fulfilled/Rejected', value: 'Task 1' / reason:'Promise rejection reason' } like this object for each promise passed in iterable
+		3.Promise.race()=> - Returns the first settled promise, whether fulfilled or rejected.
+						- Useful when you only care about the fastest result.
+						- The Promise.race() method is one of the promise concurrency methods. 
+						  It's useful when you want the first async task to complete, but do not care about its eventual state
 
 
 //Async await
