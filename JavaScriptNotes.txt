@@ -64,13 +64,14 @@ JavaScript
 // Call stack
 - It has Global execution context(GEC) => will have 2 diff part/phases => variable declaration phase and execution phase
 - For every function call function execution phase will be added into call stack.
-- 
+- as soon as function get called immediate another call stack will get created for function separately
 
 
-// Scopes=>
-Local=>inside another braces/scope
+// Scopes=> Scope determines the accessibility (visibility) of variables.
+Block=>Inside another braces/scope => Var doesn't support Block scoping variables declared using let or const cannot be accessible outside the block it will show error.But var variables are accessible.   
+Function=> Variables declared within a JavaScript function, are LOCAL to the function. Variables declare using var,let,const can only access within function 
 Global=> declared+ initialized outside block
-as soon as function get called immediate another call stack will get created for function separately  
+  
 
 
 //Function - Reusable block of code which has some task 
@@ -282,6 +283,8 @@ while using for with setTimeout var will print 10 times 10 but when use let it w
 
 
 //promises
+- The Promise object represents the eventual completion (or failure) of an asynchronous operation and its resulting value.
+- 
 
 
 //Async await
