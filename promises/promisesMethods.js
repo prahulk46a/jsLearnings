@@ -174,14 +174,14 @@ Promise.any([p8, p9]).then((value) => {
 
 let prom = new Promise((resolve, reject) => {
   console.log("Inside promise");
-
+  // resolve("Done before loop");
   // Long-running synchronous task
-  for (let i = 0; i < 1e9; i++) {} // Simulating a Synchronous heavy task
+  for (let i = 0; i < 1e10; i++) {} // Simulating a Synchronous heavy task
 
   resolve("Done!"); // Resolves after loop completes
 });
 
-console.log("Promise object:", prom); // This promise will not console anything (not even pending) until resolve get called.
+console.log("Promise object:", prom); // This promise will not console anything (not even pending) until all code get executed in callback function.
 // Synchronous Block of code will get executed line by line if asynchronous task like setTimeOut or promise is there then it will skip and execute synchronous tasks
 
 //Case 2

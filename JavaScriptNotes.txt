@@ -1,6 +1,6 @@
 JavaScript
 // History
-- Brendon Eich 1995 Js founder
+- Brandon Eich 1995 Js founder
 - Mocha first name=> live script=> JavaScript=> ECMAScript 
 - Netscape company=> Netscape Navigator.
 - ES6 most popular version
@@ -81,7 +81,7 @@ Types of function:
 	- Arrow function=> - Way to write functions more clear=> (parameters)=>{ //Body } 
 					   - Implicit return for single line of code ex. let add=()=>(num1+num2); 
 					   - Arrow functions do not create their own this binding i.e this inside arrow function will give empty obj
-    	Key Difference: Regular Function vs Arrow Function => (explaination D:\Frontend\JavaScript\InterviewQuestions\this-keyword\question1.js)
+    	Key Difference: Regular Function vs Arrow Function => (explanation D:\Frontend\JavaScript\InterviewQuestions\this-keyword\question1.js)
 			Regular Function: this depends on how the function is called. In the global context, this refers to the global object (window in browsers).
 			Arrow Function: this is lexically bound and always refers to the this of the outer (enclosing) scope when the function is created. It doesn't have its own this
 			
@@ -287,8 +287,10 @@ In global(window),blocks(window), object{2 scenario => arrow function(window), r
 while using for with setTimeout var will print 10 times 10 but when use let it will print 0->10 as var is function scope it will update same location but let is block scope hence it will update into diff instance of i.
 
 
-//promises
+//promises=> Doc for reference => https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/Promise 
 - The Promise object represents the eventual completion (or failure) of an asynchronous operation and its resulting value.
+- At the time when the constructor generates the new Promise object, it also generates a corresponding pair of functions for resolveFunc and rejectFunc.
+- It is a synchronous block of code and it will not console promise unless promise res or rej get executed. Code inside executor function can be sync or async 
 - Why promises needed??=> Before Promises, JavaScript relied heavily on callbacks for handling asynchronous operations (e.g., fetching data, reading files, or handling user input). 
 						However, callbacks had several problems like callback hell, IOC, no error handling, inconsistent data handling.
 - Solutions=> 1. Eliminates callback hell → Chaining (.then()) makes code readable.
@@ -305,7 +307,9 @@ example=> Callback hell
 			  });
 		  });
 
-//promises
+
+
+//Promises
 getUser(1)
   .then(getOrders)
   .then(getOrderDetails)
@@ -331,6 +335,72 @@ getUser(1)
 						- Useful when you only care about the fastest result.
 						- The Promise.race() method is one of the promise concurrency methods. 
 						  It's useful when you want the first async task to complete, but do not care about its eventual state
+- Every .then(Function FulfilHandler,Function rejectionHandler ) creates a new promise, which resolves when the callback inside .then() completes. The original promise remains unchanged.
+- Each promise has PromiseState,PromiseResult,Prototype as promise in it.
+- Promise will always be in pending unless all code in sync block get execute. Resolve and reject is just triggering value to change PromiseState and PromiseValue
+- Any code after resolve and reject will also get executed. 
+- for a promise only once resolve or reject get executed and if written two times resolve then it will not modify first resolve PromiseResult
+- Note that if you call resolveFunc and pass another promise object as an argument, the initial promise can be said to be "resolved", but still not "settled".
+- The executor(promise obj callback function) return value is ignored
+- . then are just registerer it will register all fulfilled and rejected function into an array.
+	It will not wait for res() or rej(). if res() get called means promise state is changed to fulfilled then fulFillHandler array functions will get called.
+- Each .then adds new fulfilledHandler and rejectionHandler into array
+- Task of Microtask is to execute this fulfilledHandlers and rejectionHandlers
+Example=> 
+console.log("Start");
+
+const myPromise = new Promise((resolve, reject) => {
+  console.log("Inside Promise");
+  setTimeout(() => {
+    resolve("Promise Resolved");
+  }, 1000);
+});
+
+myPromise.then((value) => {
+  console.log(value);
+});
+
+console.log("End");
+
+
+
+Step-by-Step Execution:
+console.log("Start") is executed
+
+This is a synchronous operation, so it executes immediately.
+Output: Start
+Stored in: Call Stack (Executes and gets removed)
+Creating a Promise (new Promise)
+
+The function inside new Promise() runs immediately.
+Memory Storage:
+myPromise is stored in the Heap Memory.
+The executor function (resolve, reject) => {} is called.
+Output: Inside Promise
+setTimeout() is triggered
+
+setTimeout(() => { resolve("Promise Resolved"); }, 1000); is a Web API call (handled by the browser, not JavaScript itself).
+The timer starts, but does NOT block execution.
+Stored in: Web APIs (handled by the browser)
+myPromise.then() is encountered
+
+then() registers a callback to be executed later when the promise is resolved.
+Stored in: Microtask Queue (not executed yet)
+JavaScript does not pause; it continues execution.
+console.log("End") is executed
+
+Since this is synchronous, it runs immediately.
+Output: End
+Stored in: Call Stack (Executes and gets removed)
+After 1 second (setTimeout completes)
+
+The resolve("Promise Resolved") function is called.
+The Promise is now fulfilled.
+The registered .then() callback moves from the Microtask Queue to the Call Stack.
+Promise Callback is executed
+console.log("Promise Resolved") runs inside .then().
+Output: Promise Resolved
+Stored in: Call Stack (Executes and gets removed)
 
 
 //Async await
@@ -338,9 +408,11 @@ getUser(1)
 
 // Dom
 
-//events
+
+// Events
 1. click=>
 2. 
+
 
 // Modules=>
 - Used to import and export repetitive block of code
@@ -357,6 +429,8 @@ getUser(1)
 				- Have to use default keyword.
 				- Can use default only once hence can send only one wrapped object.
 				- Default keyword should not be on same line of variable declaration
+
+
 
 //			
 

@@ -1,0 +1,3362 @@
+{
+	"tldrawFileFormatVersion": 1,
+	"schema": {
+		"schemaVersion": 2,
+		"sequences": {
+			"com.tldraw.store": 4,
+			"com.tldraw.asset": 1,
+			"com.tldraw.camera": 1,
+			"com.tldraw.document": 2,
+			"com.tldraw.instance": 25,
+			"com.tldraw.instance_page_state": 5,
+			"com.tldraw.page": 1,
+			"com.tldraw.instance_presence": 6,
+			"com.tldraw.pointer": 1,
+			"com.tldraw.shape": 4,
+			"com.tldraw.asset.bookmark": 2,
+			"com.tldraw.asset.image": 5,
+			"com.tldraw.asset.video": 5,
+			"com.tldraw.shape.group": 0,
+			"com.tldraw.shape.text": 3,
+			"com.tldraw.shape.bookmark": 2,
+			"com.tldraw.shape.draw": 2,
+			"com.tldraw.shape.geo": 10,
+			"com.tldraw.shape.note": 9,
+			"com.tldraw.shape.line": 5,
+			"com.tldraw.shape.frame": 0,
+			"com.tldraw.shape.arrow": 5,
+			"com.tldraw.shape.highlight": 1,
+			"com.tldraw.shape.embed": 4,
+			"com.tldraw.shape.image": 4,
+			"com.tldraw.shape.video": 2,
+			"com.tldraw.binding.arrow": 0
+		}
+	},
+	"records": [
+		{
+			"gridSize": 10,
+			"name": "",
+			"meta": {},
+			"id": "document:document",
+			"typeName": "document"
+		},
+		{
+			"meta": {},
+			"id": "page:page",
+			"name": "Page 1",
+			"index": "a1",
+			"typeName": "page"
+		},
+		{
+			"id": "pointer:pointer",
+			"typeName": "pointer",
+			"x": -441.322949914874,
+			"y": -20.3863483606616,
+			"lastActivityTimestamp": 1742408991524,
+			"meta": {}
+		},
+		{
+			"followingUserId": null,
+			"opacityForNextShape": 1,
+			"stylesForNextShape": {
+				"tldraw:fill": "none",
+				"tldraw:geo": "rectangle",
+				"tldraw:horizontalAlign": "start",
+				"tldraw:verticalAlign": "middle",
+				"tldraw:font": "sans",
+				"tldraw:size": "m",
+				"tldraw:arrowheadStart": "none",
+				"tldraw:dash": "draw"
+			},
+			"brush": null,
+			"scribbles": [],
+			"cursor": {
+				"type": "move",
+				"rotation": 0
+			},
+			"isFocusMode": false,
+			"exportBackground": true,
+			"isDebugMode": false,
+			"isToolLocked": false,
+			"screenBounds": {
+				"x": 0,
+				"y": 0,
+				"w": 968.0555419921875,
+				"h": 602.7777709960938
+			},
+			"insets": [
+				false,
+				false,
+				true,
+				false
+			],
+			"zoomBrush": null,
+			"isGridMode": false,
+			"isPenMode": false,
+			"chatMessage": "",
+			"isChatting": false,
+			"highlightedUserIds": [],
+			"isFocused": true,
+			"devicePixelRatio": 1.440000057220459,
+			"isCoarsePointer": false,
+			"isHoveringCanvas": true,
+			"openMenus": [],
+			"isChangingStyle": false,
+			"isReadonly": false,
+			"meta": {},
+			"duplicateProps": null,
+			"id": "instance:instance",
+			"currentPageId": "page:page",
+			"typeName": "instance"
+		},
+		{
+			"editingShapeId": null,
+			"croppingShapeId": null,
+			"selectedShapeIds": [
+				"shape:jS2W5BEFvyJXSJWm39Fzz"
+			],
+			"hoveredShapeId": null,
+			"erasingShapeIds": [],
+			"hintingShapeIds": [],
+			"focusedGroupId": "shape:zl3w3lewZFQKsfzBblQiy",
+			"meta": {},
+			"id": "instance_page_state:page:page",
+			"pageId": "page:page",
+			"typeName": "instance_page_state"
+		},
+		{
+			"x": 1672.61112343791,
+			"y": 278.8574546368311,
+			"z": 0.4889865150459166,
+			"meta": {},
+			"id": "camera:page:page",
+			"typeName": "camera"
+		},
+		{
+			"x": 0,
+			"y": 52.78865571405882,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:3875cH4ovG93sp2fC12cV",
+			"type": "geo",
+			"props": {
+				"w": 857.0255676857023,
+				"h": 625.9669799804688,
+				"geo": "rectangle",
+				"color": "black",
+				"labelColor": "black",
+				"fill": "none",
+				"dash": "draw",
+				"size": "m",
+				"font": "draw",
+				"align": "start",
+				"verticalAlign": "start",
+				"growY": 29.6983642578125,
+				"url": "",
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							}
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "function createPromise(){"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "\treturn promise(funct execu(res,rej)){ //2"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "\t\tsetTimeOut(()=>{ //3"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "                    //code res() and Rej()"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "\t\t},3000)    //This will Executed after sync block code executed"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "\t}"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "}"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							}
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "const p=createPromise(); //1"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "p.then( "
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "     fulfillHandler(value){"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "\t//Code when promise res get executed"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "     },"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							}
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "     rejectionHandler(value){"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "\t//Code when promise res get executed"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "     }"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							}
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": ")"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							}
+						}
+					]
+				}
+			},
+			"parentId": "shape:Gusw4Xq3ZskWilsEUolCB",
+			"index": "a1",
+			"typeName": "shape"
+		},
+		{
+			"x": 41.33223333202557,
+			"y": 0.4700512564905921,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:6HzA6nuXFICMqIIGTbYsH",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "l",
+				"w": 260.2013854980469,
+				"font": "mono",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"marks": [
+										{
+											"type": "bold"
+										}
+									],
+									"text": "Pseudo-code:"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "shape:Gusw4Xq3ZskWilsEUolCB",
+			"index": "a35eW",
+			"typeName": "shape"
+		},
+		{
+			"x": 0.8860518953634369,
+			"y": 0,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:k1tGM8zQsblAY0OYpS06O",
+			"type": "geo",
+			"props": {
+				"w": 322.13480859235466,
+				"h": 51.43996156022675,
+				"geo": "rectangle",
+				"color": "black",
+				"labelColor": "black",
+				"fill": "none",
+				"dash": "draw",
+				"size": "m",
+				"font": "mono",
+				"align": "start",
+				"verticalAlign": "start",
+				"growY": 0,
+				"url": "",
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph"
+						}
+					]
+				}
+			},
+			"parentId": "shape:Gusw4Xq3ZskWilsEUolCB",
+			"index": "a2Bb7",
+			"typeName": "shape"
+		},
+		{
+			"x": 1473.245209703773,
+			"y": 658.6279565986455,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:Gusw4Xq3ZskWilsEUolCB",
+			"type": "group",
+			"parentId": "shape:zl3w3lewZFQKsfzBblQiy",
+			"index": "a1",
+			"props": {},
+			"typeName": "shape"
+		},
+		{
+			"x": 530.6634674387773,
+			"y": 426.84739329988923,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:O55r99i0o4Me-v_j7nDds",
+			"type": "geo",
+			"props": {
+				"w": 321.4157057522268,
+				"h": 56.29470443725586,
+				"geo": "rectangle",
+				"color": "black",
+				"labelColor": "black",
+				"fill": "semi",
+				"dash": "draw",
+				"size": "s",
+				"font": "mono",
+				"align": "middle",
+				"verticalAlign": "start",
+				"growY": 0,
+				"url": "",
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "1.createPromise() call"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "shape:DIo1iewyEQoLBkchNI3mD",
+			"index": "a24AU",
+			"typeName": "shape"
+		},
+		{
+			"x": 1483.313100661788,
+			"y": 1000.2860012550603,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:SzQqgGCm9BShXYds9w_-a",
+			"type": "arrow",
+			"props": {
+				"dash": "draw",
+				"size": "l",
+				"fill": "semi",
+				"color": "black",
+				"labelColor": "black",
+				"bend": 0,
+				"start": {
+					"x": -10.835943533604166,
+					"y": 2.0246725502579466
+				},
+				"end": {
+					"x": -137.84346983575495,
+					"y": 36.77784124734285
+				},
+				"arrowheadStart": "none",
+				"arrowheadEnd": "arrow",
+				"text": "",
+				"labelPosition": 0.5,
+				"font": "mono",
+				"scale": 1
+			},
+			"parentId": "shape:zl3w3lewZFQKsfzBblQiy",
+			"index": "a65GC",
+			"typeName": "shape"
+		},
+		{
+			"meta": {},
+			"id": "binding:iZc6QxEqqOt_iJmkPj568",
+			"type": "arrow",
+			"fromId": "shape:SzQqgGCm9BShXYds9w_-a",
+			"toId": "shape:3875cH4ovG93sp2fC12cV",
+			"props": {
+				"isPrecise": true,
+				"isExact": false,
+				"normalizedAnchor": {
+					"x": 0.03190860348620196,
+					"y": 0.4430076465628193
+				},
+				"terminal": "start"
+			},
+			"typeName": "binding"
+		},
+		{
+			"x": 314.0389408633556,
+			"y": 748.408351327005,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:b0XwHqMNfLNHmDxZwaINR",
+			"type": "geo",
+			"props": {
+				"w": 358.0663118510165,
+				"h": 68.15241151803139,
+				"geo": "rectangle",
+				"color": "black",
+				"labelColor": "black",
+				"fill": "semi",
+				"dash": "draw",
+				"size": "s",
+				"font": "mono",
+				"align": "middle",
+				"verticalAlign": "start",
+				"growY": 0,
+				"url": "",
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph"
+						}
+					]
+				}
+			},
+			"parentId": "shape:DIo1iewyEQoLBkchNI3mD",
+			"index": "a60IM",
+			"typeName": "shape"
+		},
+		{
+			"x": 318.0490665417009,
+			"y": 628.3651986948491,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:l2MKSHu6RFngQ_nQTEZDC",
+			"type": "geo",
+			"props": {
+				"w": 358.0663118510165,
+				"h": 68.15241151803139,
+				"geo": "rectangle",
+				"color": "black",
+				"labelColor": "black",
+				"fill": "semi",
+				"dash": "draw",
+				"size": "s",
+				"font": "mono",
+				"align": "middle",
+				"verticalAlign": "start",
+				"growY": 0,
+				"url": "",
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph"
+						}
+					]
+				}
+			},
+			"parentId": "shape:DIo1iewyEQoLBkchNI3mD",
+			"index": "a88pH",
+			"typeName": "shape"
+		},
+		{
+			"x": 335.45943336113976,
+			"y": 625.3397097108491,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:9E9vkq7y_-wf-ukcmkoH1",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 196.7811680591957,
+				"font": "mono",
+				"textAlign": "start",
+				"autoSize": false,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "Microtask queue"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "shape:DIo1iewyEQoLBkchNI3mD",
+			"index": "a9BPN",
+			"typeName": "shape"
+		},
+		{
+			"x": 340.70333641328625,
+			"y": 823.4920020555053,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:O8dwb5CqIuBoNwf3A8nyz",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 310.56698429856874,
+				"font": "mono",
+				"textAlign": "start",
+				"autoSize": false,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "Macrotask queue/callback queue"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "shape:DIo1iewyEQoLBkchNI3mD",
+			"index": "aA0qQ",
+			"typeName": "shape"
+		},
+		{
+			"meta": {},
+			"id": "binding:vKx3XH9YyvwcSRyCvgCdq",
+			"type": "arrow",
+			"fromId": "shape:SzQqgGCm9BShXYds9w_-a",
+			"toId": "shape:O55r99i0o4Me-v_j7nDds",
+			"props": {
+				"isPrecise": true,
+				"isExact": false,
+				"normalizedAnchor": {
+					"x": 0.8472528181759336,
+					"y": 0.33487721262182385
+				},
+				"terminal": "end"
+			},
+			"typeName": "binding"
+		},
+		{
+			"x": 511.7293102299865,
+			"y": 307.7505256793336,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:1RXT5N4T8bznYiO7AGNWo",
+			"type": "geo",
+			"props": {
+				"w": 364.9969482421875,
+				"h": 104.88410949707031,
+				"geo": "rectangle",
+				"color": "black",
+				"labelColor": "black",
+				"fill": "semi",
+				"dash": "draw",
+				"size": "s",
+				"font": "mono",
+				"align": "start",
+				"verticalAlign": "middle",
+				"growY": 0,
+				"url": "",
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "2.Promise created and function executer will be  call immediatedly"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "shape:DIo1iewyEQoLBkchNI3mD",
+			"index": "a42tN",
+			"typeName": "shape"
+		},
+		{
+			"x": 1548.553719607161,
+			"y": 797.881621895938,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:JO6z8wTpyRbXD5om7uGGd",
+			"type": "arrow",
+			"props": {
+				"dash": "draw",
+				"size": "m",
+				"fill": "semi",
+				"color": "black",
+				"labelColor": "black",
+				"bend": 0,
+				"start": {
+					"x": 0,
+					"y": 0
+				},
+				"end": {
+					"x": -176.1281520290711,
+					"y": 43.766365793669536
+				},
+				"arrowheadStart": "none",
+				"arrowheadEnd": "arrow",
+				"text": "",
+				"labelPosition": 0.5,
+				"font": "mono",
+				"scale": 1
+			},
+			"parentId": "shape:zl3w3lewZFQKsfzBblQiy",
+			"index": "a74PI",
+			"typeName": "shape"
+		},
+		{
+			"meta": {},
+			"id": "binding:4vcwG_Ld0KM2oTWKoTNA5",
+			"type": "arrow",
+			"fromId": "shape:JO6z8wTpyRbXD5om7uGGd",
+			"toId": "shape:3875cH4ovG93sp2fC12cV",
+			"props": {
+				"isPrecise": true,
+				"isExact": false,
+				"normalizedAnchor": {
+					"x": 0.08356141062332058,
+					"y": 0.14363889151120007
+				},
+				"terminal": "start"
+			},
+			"typeName": "binding"
+		},
+		{
+			"meta": {},
+			"id": "binding:JGrMOWH7hT-2XK7V6QOni",
+			"type": "arrow",
+			"fromId": "shape:JO6z8wTpyRbXD5om7uGGd",
+			"toId": "shape:1RXT5N4T8bznYiO7AGNWo",
+			"props": {
+				"isPrecise": true,
+				"isExact": false,
+				"normalizedAnchor": {
+					"x": 0.5,
+					"y": 0.5
+				},
+				"terminal": "end"
+			},
+			"typeName": "binding"
+		},
+		{
+			"x": 1614.7765940864213,
+			"y": 828.3083363162787,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:i-d_Cw5TBu056Rlui5mId",
+			"type": "arrow",
+			"props": {
+				"dash": "solid",
+				"size": "s",
+				"fill": "none",
+				"color": "black",
+				"labelColor": "black",
+				"bend": -172.56688976122342,
+				"start": {
+					"x": 0,
+					"y": 0
+				},
+				"end": {
+					"x": -288.88595986400287,
+					"y": 161.89357994037817
+				},
+				"arrowheadStart": "none",
+				"arrowheadEnd": "arrow",
+				"text": "This settimeout will be added to callback queue after 3 sec untill then it remains in runtime",
+				"labelPosition": 0.5518556019565336,
+				"font": "mono",
+				"scale": 1
+			},
+			"parentId": "shape:zl3w3lewZFQKsfzBblQiy",
+			"index": "a49J3",
+			"typeName": "shape"
+		},
+		{
+			"meta": {},
+			"id": "binding:dOLH1BAjsxrjp03iHyBou",
+			"type": "arrow",
+			"fromId": "shape:i-d_Cw5TBu056Rlui5mId",
+			"toId": "shape:3875cH4ovG93sp2fC12cV",
+			"props": {
+				"isPrecise": true,
+				"isExact": false,
+				"normalizedAnchor": {
+					"x": 0.15789501771817388,
+					"y": 0.21857921363929714
+				},
+				"terminal": "start"
+			},
+			"typeName": "binding"
+		},
+		{
+			"meta": {},
+			"id": "binding:t5Ja5u3xLDJRxev3Qx2Eg",
+			"type": "arrow",
+			"fromId": "shape:i-d_Cw5TBu056Rlui5mId",
+			"toId": "shape:b0XwHqMNfLNHmDxZwaINR",
+			"props": {
+				"isPrecise": true,
+				"isExact": false,
+				"normalizedAnchor": {
+					"x": 0.5,
+					"y": 0.5
+				},
+				"terminal": "end"
+			},
+			"typeName": "binding"
+		},
+		{
+			"x": 330.02532301591157,
+			"y": 767.4415184384907,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:xp4XAN97zxm8V3KtOw31T",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 145.01040649414062,
+				"font": "mono",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "SetTimeout"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "shape:DIo1iewyEQoLBkchNI3mD",
+			"index": "aBC3N",
+			"typeName": "shape"
+		},
+		{
+			"x": 331.47954951497695,
+			"y": 782.0196103940243,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:lvUy71i4mzBmgBiFq_D31",
+			"type": "arrow",
+			"props": {
+				"dash": "dotted",
+				"size": "m",
+				"fill": "none",
+				"color": "black",
+				"labelColor": "black",
+				"bend": -373.87921757804645,
+				"start": {
+					"x": 0,
+					"y": 0
+				},
+				"end": {
+					"x": -136.75240742570122,
+					"y": -503.91441511885597
+				},
+				"arrowheadStart": "none",
+				"arrowheadEnd": "arrow",
+				"text": "",
+				"labelPosition": 0.5,
+				"font": "mono",
+				"scale": 1
+			},
+			"parentId": "shape:DIo1iewyEQoLBkchNI3mD",
+			"index": "aDnEs",
+			"typeName": "shape"
+		},
+		{
+			"meta": {},
+			"id": "binding:ddOfOtLvMJJkkyocHfQm8",
+			"type": "arrow",
+			"fromId": "shape:lvUy71i4mzBmgBiFq_D31",
+			"toId": "shape:xp4XAN97zxm8V3KtOw31T",
+			"props": {
+				"isPrecise": false,
+				"isExact": false,
+				"normalizedAnchor": {
+					"x": 0.010028428539879619,
+					"y": 0.44993870468777986
+				},
+				"terminal": "start"
+			},
+			"typeName": "binding"
+		},
+		{
+			"x": 204.74471496523802,
+			"y": 1095.7086086907864,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:6NWEwX8Bz0vJLNHzLY0vm",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 193.29905981879506,
+				"font": "mono",
+				"textAlign": "start",
+				"autoSize": false,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "After All sync code ends async code will get executed"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "shape:zl3w3lewZFQKsfzBblQiy",
+			"index": "a2BN2",
+			"typeName": "shape"
+		},
+		{
+			"x": 253.063660512262,
+			"y": 164.3685826553581,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:U8SbxYd25wxdMzcPhWejg",
+			"type": "geo",
+			"props": {
+				"w": 204.37352670081395,
+				"h": 61.69834899902344,
+				"geo": "rectangle",
+				"color": "black",
+				"labelColor": "black",
+				"fill": "none",
+				"dash": "draw",
+				"size": "m",
+				"font": "mono",
+				"align": "middle",
+				"verticalAlign": "start",
+				"growY": 0,
+				"url": "",
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "SetTimeOut"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "shape:DIo1iewyEQoLBkchNI3mD",
+			"index": "aD6y8",
+			"typeName": "shape"
+		},
+		{
+			"meta": {},
+			"id": "binding:pItNFPsfEmfmq6ELhzYLI",
+			"type": "arrow",
+			"fromId": "shape:lvUy71i4mzBmgBiFq_D31",
+			"toId": "shape:U8SbxYd25wxdMzcPhWejg",
+			"props": {
+				"isPrecise": true,
+				"isExact": false,
+				"normalizedAnchor": {
+					"x": 0.5,
+					"y": 0.5
+				},
+				"terminal": "end"
+			},
+			"typeName": "binding"
+		},
+		{
+			"x": 236.17604644637743,
+			"y": 0,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:W-iw-2dHyHg1M8qg2_yfA",
+			"type": "group",
+			"parentId": "shape:DIo1iewyEQoLBkchNI3mD",
+			"index": "a1",
+			"props": {},
+			"typeName": "shape"
+		},
+		{
+			"x": 0,
+			"y": -171.4943176212991,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:GaFZ4hs7_wgpCN6HdTJRZ",
+			"type": "geo",
+			"props": {
+				"w": 691.8959222304111,
+				"h": 1072.2983331814933,
+				"geo": "rectangle",
+				"color": "black",
+				"labelColor": "black",
+				"fill": "semi",
+				"dash": "draw",
+				"size": "l",
+				"font": "mono",
+				"align": "start",
+				"verticalAlign": "start",
+				"growY": 0,
+				"url": "",
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							}
+						}
+					]
+				}
+			},
+			"parentId": "shape:W-iw-2dHyHg1M8qg2_yfA",
+			"index": "a1",
+			"typeName": "shape"
+		},
+		{
+			"x": 387.31444238168365,
+			"y": 517.7784125229153,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:SRwC3GUS6HKe4iE0ejjLE",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 255.67944973384607,
+				"font": "mono",
+				"textAlign": "start",
+				"autoSize": false,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "Call stack"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "shape:W-iw-2dHyHg1M8qg2_yfA",
+			"index": "a57Ds",
+			"typeName": "shape"
+		},
+		{
+			"x": 258.60928497195755,
+			"y": -21.426830786381004,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:JHIUP4Z3jYaC18J69nXS-",
+			"type": "geo",
+			"props": {
+				"w": 392.71924978104744,
+				"h": 529.1563892279655,
+				"geo": "rectangle",
+				"color": "black",
+				"labelColor": "black",
+				"fill": "semi",
+				"dash": "draw",
+				"size": "s",
+				"font": "mono",
+				"align": "middle",
+				"verticalAlign": "start",
+				"growY": 0,
+				"url": "",
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph"
+						}
+					]
+				}
+			},
+			"parentId": "shape:W-iw-2dHyHg1M8qg2_yfA",
+			"index": "a60gc",
+			"typeName": "shape"
+		},
+		{
+			"x": 257.78438947598625,
+			"y": 302.01589113302225,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:vfb1PaDxtBlbP7DLba29V",
+			"type": "geo",
+			"props": {
+				"w": 396.6098976652156,
+				"h": 1,
+				"geo": "rectangle",
+				"color": "black",
+				"labelColor": "black",
+				"fill": "none",
+				"dash": "dotted",
+				"size": "m",
+				"font": "mono",
+				"align": "middle",
+				"verticalAlign": "start",
+				"growY": 0,
+				"url": "",
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph"
+						}
+					]
+				}
+			},
+			"parentId": "shape:W-iw-2dHyHg1M8qg2_yfA",
+			"index": "a74ho",
+			"typeName": "shape"
+		},
+		{
+			"x": 259.8979891571463,
+			"y": 232.21345177271286,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:0bU8-cNSkejicPuGv0MaC",
+			"type": "geo",
+			"props": {
+				"w": 396.6098976652156,
+				"h": 1,
+				"geo": "rectangle",
+				"color": "black",
+				"labelColor": "black",
+				"fill": "none",
+				"dash": "dotted",
+				"size": "m",
+				"font": "mono",
+				"align": "middle",
+				"verticalAlign": "start",
+				"growY": 0,
+				"url": "",
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph"
+						}
+					]
+				}
+			},
+			"parentId": "shape:W-iw-2dHyHg1M8qg2_yfA",
+			"index": "a7jDl",
+			"typeName": "shape"
+		},
+		{
+			"x": 272.5478974373784,
+			"y": 242.84613016364318,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:FGaHB_KpkbFZL77J5aP9c",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "s",
+				"w": 371.88832246872164,
+				"font": "mono",
+				"textAlign": "start",
+				"autoSize": false,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "Sync task end all promise code done"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "shape:W-iw-2dHyHg1M8qg2_yfA",
+			"index": "a85q9",
+			"typeName": "shape"
+		},
+		{
+			"x": 503.30091375415986,
+			"y": 138.80634397511886,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:LBGucZpZRWLiIJA-VWARK",
+			"type": "geo",
+			"props": {
+				"w": 378.71191595276173,
+				"h": 82.02506983452986,
+				"geo": "rectangle",
+				"color": "black",
+				"labelColor": "black",
+				"fill": "none",
+				"dash": "draw",
+				"size": "m",
+				"font": "mono",
+				"align": "middle",
+				"verticalAlign": "start",
+				"growY": 0,
+				"url": "",
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph"
+						}
+					]
+				}
+			},
+			"parentId": "shape:DIo1iewyEQoLBkchNI3mD",
+			"index": "aE5Cm",
+			"typeName": "shape"
+		},
+		{
+			"x": 571.3136296641483,
+			"y": 139.3872575216389,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:OyLl53lgZ9NuwkZN4W3qm",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 20,
+				"font": "mono",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph"
+						}
+					]
+				}
+			},
+			"parentId": "shape:DIo1iewyEQoLBkchNI3mD",
+			"index": "aF3qJ",
+			"typeName": "shape"
+		},
+		{
+			"x": 515.4319749092227,
+			"y": 144.8385198962946,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:91EbonzrFGC0b_p0CVL_g",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "s",
+				"w": 361.35460812864903,
+				"font": "mono",
+				"textAlign": "start",
+				"autoSize": false,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "p.then()=> both fulFillHandler and rejectionHandler registed in array"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "shape:DIo1iewyEQoLBkchNI3mD",
+			"index": "aG4Hw",
+			"typeName": "shape"
+		},
+		{
+			"x": 407.3899378070987,
+			"y": 706.5392466251205,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:DIo1iewyEQoLBkchNI3mD",
+			"type": "group",
+			"parentId": "shape:zl3w3lewZFQKsfzBblQiy",
+			"index": "a39PH",
+			"props": {},
+			"typeName": "shape"
+		},
+		{
+			"x": 650.626318591924,
+			"y": 544.6776414539582,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:S75_EnCaln2IG9UL8wW0Q",
+			"type": "geo",
+			"props": {
+				"w": 257.9675152620339,
+				"h": 67.60329597837955,
+				"geo": "rectangle",
+				"color": "black",
+				"labelColor": "black",
+				"fill": "none",
+				"dash": "draw",
+				"size": "s",
+				"font": "mono",
+				"align": "start",
+				"verticalAlign": "middle",
+				"growY": 0,
+				"url": "",
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "Fulfilled array=> "
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "shape:zl3w3lewZFQKsfzBblQiy",
+			"index": "a80Mj",
+			"typeName": "shape"
+		},
+		{
+			"x": 652.292214946457,
+			"y": 618.8065906008121,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:7sopwoyP2vFYTN6206SO3",
+			"type": "geo",
+			"props": {
+				"w": 241.94725772587196,
+				"h": 67.60329597837955,
+				"geo": "rectangle",
+				"color": "black",
+				"labelColor": "black",
+				"fill": "none",
+				"dash": "draw",
+				"size": "s",
+				"font": "mono",
+				"align": "start",
+				"verticalAlign": "middle",
+				"growY": 0,
+				"url": "",
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "rejectionHandler"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "shape:zl3w3lewZFQKsfzBblQiy",
+			"index": "a9CBT",
+			"typeName": "shape"
+		},
+		{
+			"x": 2036.244961034955,
+			"y": 1068.600148243359,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:HKdjIHdIwEWkiBiMdAqn7",
+			"type": "arrow",
+			"props": {
+				"dash": "draw",
+				"size": "s",
+				"fill": "none",
+				"color": "black",
+				"labelColor": "black",
+				"bend": 697.233130229584,
+				"start": {
+					"x": 0,
+					"y": 0
+				},
+				"end": {
+					"x": -744.0485868700061,
+					"y": -558.4346908135677
+				},
+				"arrowheadStart": "none",
+				"arrowheadEnd": "arrow",
+				"text": "Fulfilled Array registed in an array",
+				"labelPosition": 0.571938429325155,
+				"font": "mono",
+				"scale": 1
+			},
+			"parentId": "shape:zl3w3lewZFQKsfzBblQiy",
+			"index": "a50LY",
+			"typeName": "shape"
+		},
+		{
+			"meta": {},
+			"id": "binding:uKsLfMDJFQOqh2omGgYse",
+			"type": "arrow",
+			"fromId": "shape:HKdjIHdIwEWkiBiMdAqn7",
+			"toId": "shape:3875cH4ovG93sp2fC12cV",
+			"props": {
+				"isPrecise": true,
+				"isExact": false,
+				"normalizedAnchor": {
+					"x": 0.4253175981925704,
+					"y": 0.5333912594183485
+				},
+				"terminal": "start"
+			},
+			"typeName": "binding"
+		},
+		{
+			"meta": {},
+			"id": "binding:IExNytbIreI4QLMG4vUa2",
+			"type": "arrow",
+			"fromId": "shape:HKdjIHdIwEWkiBiMdAqn7",
+			"toId": "shape:GaFZ4hs7_wgpCN6HdTJRZ",
+			"props": {
+				"isPrecise": true,
+				"isExact": false,
+				"normalizedAnchor": {
+					"x": 0.35740992020525003,
+					"y": 0.051090428129396084
+				},
+				"terminal": "end"
+			},
+			"typeName": "binding"
+		},
+		{
+			"x": 916.0116153723385,
+			"y": 698.9306963575696,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:BDvmr5He4nnNovuAYoXqe",
+			"type": "geo",
+			"props": {
+				"w": 372.993896484375,
+				"h": 129.17881774902344,
+				"geo": "rectangle",
+				"color": "black",
+				"labelColor": "black",
+				"fill": "none",
+				"dash": "draw",
+				"size": "s",
+				"font": "mono",
+				"align": "start",
+				"verticalAlign": "middle",
+				"growY": 0,
+				"url": "",
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "if promise res get called then all fulFilledHandler array function will get executed else rejection handler will get call"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "shape:zl3w3lewZFQKsfzBblQiy",
+			"index": "aA3lJ",
+			"typeName": "shape"
+		},
+		{
+			"x": 357.0007768333745,
+			"y": 167.24886463204695,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:Ncz1bAtbGubIAO6WkY_wW",
+			"type": "arrow",
+			"props": {
+				"dash": "draw",
+				"size": "s",
+				"fill": "none",
+				"color": "black",
+				"labelColor": "black",
+				"bend": -35.0519611731354,
+				"start": {
+					"x": 0,
+					"y": 0
+				},
+				"end": {
+					"x": 2,
+					"y": 0
+				},
+				"arrowheadStart": "none",
+				"arrowheadEnd": "arrow",
+				"text": "",
+				"labelPosition": 0.5,
+				"font": "mono",
+				"scale": 1
+			},
+			"parentId": "shape:DIo1iewyEQoLBkchNI3mD",
+			"index": "aDe7S",
+			"typeName": "shape"
+		},
+		{
+			"meta": {},
+			"id": "binding:W630mv45x-CeconWaovoY",
+			"type": "arrow",
+			"fromId": "shape:Ncz1bAtbGubIAO6WkY_wW",
+			"toId": "shape:U8SbxYd25wxdMzcPhWejg",
+			"props": {
+				"isPrecise": false,
+				"isExact": false,
+				"normalizedAnchor": {
+					"x": 0.5085644799449388,
+					"y": 0.04668329093756525
+				},
+				"terminal": "start"
+			},
+			"typeName": "binding"
+		},
+		{
+			"meta": {},
+			"id": "binding:EFO45HNTc9WklOJjkQoM7",
+			"type": "arrow",
+			"fromId": "shape:Ncz1bAtbGubIAO6WkY_wW",
+			"toId": "shape:JHIUP4Z3jYaC18J69nXS-",
+			"props": {
+				"isPrecise": true,
+				"isExact": false,
+				"normalizedAnchor": {
+					"x": 0.2083853143661913,
+					"y": 0.30273762574699126
+				},
+				"terminal": "end"
+			},
+			"typeName": "binding"
+		},
+		{
+			"x": 0,
+			"y": 0,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:UHgOijhOu3jWADJfEFOA9",
+			"type": "geo",
+			"props": {
+				"w": 2976.3220846307986,
+				"h": 1835.61704484048,
+				"geo": "rectangle",
+				"color": "black",
+				"labelColor": "black",
+				"fill": "none",
+				"dash": "draw",
+				"size": "s",
+				"font": "mono",
+				"align": "start",
+				"verticalAlign": "middle",
+				"growY": 0,
+				"url": "",
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph"
+						}
+					]
+				}
+			},
+			"parentId": "shape:zl3w3lewZFQKsfzBblQiy",
+			"index": "aB6ZA",
+			"typeName": "shape"
+		},
+		{
+			"x": -1513.5642622984778,
+			"y": -635.7603625730571,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:zl3w3lewZFQKsfzBblQiy",
+			"type": "group",
+			"parentId": "page:page",
+			"index": "aR3Yq",
+			"props": {},
+			"typeName": "shape"
+		},
+		{
+			"x": -1499.1210753164592,
+			"y": -719.3787465588176,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:y2Tqs-mVn1J5VtuYGg7fT",
+			"type": "geo",
+			"props": {
+				"w": 1181.3816400531514,
+				"h": 90.1741615252662,
+				"geo": "rectangle",
+				"color": "black",
+				"labelColor": "black",
+				"fill": "none",
+				"dash": "draw",
+				"size": "xl",
+				"font": "draw",
+				"align": "start",
+				"verticalAlign": "middle",
+				"growY": 0,
+				"url": "",
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"marks": [
+										{
+											"type": "bold"
+										}
+									],
+									"text": "How Promise Internally works"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "aS6VQ",
+			"typeName": "shape"
+		},
+		{
+			"x": 2164.959098429207,
+			"y": -423.2089538589264,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:kokANz3XslcXTR-3sToZw",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "xl",
+				"w": 662.6410522460938,
+				"font": "draw",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "console.log(\"Start\");\r"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "\r"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "const myPromise = new Promise((resolve, reject) => {\r"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "  console.log(\"Inside Promise\");\r"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "  setTimeout(() => {\r"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "    resolve(\"Promise Resolved\");\r"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "  }, 1000);\r"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "});\r"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "\r"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "myPromise.then((value) => {\r"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "  console.log(value);\r"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "});\r"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "\r"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "console.log(\"End\");"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "aT5V8",
+			"typeName": "shape"
+		},
+		{
+			"x": 2159.56852256094,
+			"y": -596.4471480276216,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:Vp9wv9WGeqm28qm7Tqd3n",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "xl",
+				"w": 191.6141357421875,
+				"font": "draw",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "Example"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "aU2Kj",
+			"typeName": "shape"
+		},
+		{
+			"x": 1896.7076314143123,
+			"y": -831.2775370489082,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:KwDiJq3Op4X7PZr76Hs4l",
+			"type": "geo",
+			"props": {
+				"w": 4963.970572324598,
+				"h": 2185.8772233382515,
+				"geo": "rectangle",
+				"color": "black",
+				"labelColor": "black",
+				"fill": "none",
+				"dash": "draw",
+				"size": "xl",
+				"font": "draw",
+				"align": "start",
+				"verticalAlign": "middle",
+				"growY": 0,
+				"url": "",
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph"
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "aQ4T5",
+			"typeName": "shape"
+		},
+		{
+			"x": 3564.0215400598963,
+			"y": -800.0163393156972,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:zXWjN8Nq-W8HScJoAnQAn",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "xl",
+				"w": 1722.7430419921875,
+				"font": "draw",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "heading",
+							"attrs": {
+								"dir": "auto",
+								"level": 3
+							},
+							"content": [
+								{
+									"type": "text",
+									"marks": [
+										{
+											"type": "bold"
+										}
+									],
+									"text": "Step-by-Step Execution"
+								}
+							]
+						},
+						{
+							"type": "orderedList",
+							"attrs": {
+								"start": 1
+							},
+							"content": [
+								{
+									"type": "listItem",
+									"content": [
+										{
+											"type": "paragraph",
+											"attrs": {
+												"dir": "auto"
+											},
+											"content": [
+												{
+													"type": "text",
+													"marks": [
+														{
+															"type": "bold"
+														},
+														{
+															"type": "code"
+														}
+													],
+													"text": "console.log(\"Start\")"
+												},
+												{
+													"type": "text",
+													"marks": [
+														{
+															"type": "bold"
+														}
+													],
+													"text": " is executed"
+												}
+											]
+										},
+										{
+											"type": "bulletList",
+											"content": [
+												{
+													"type": "listItem",
+													"content": [
+														{
+															"type": "paragraph",
+															"attrs": {
+																"dir": "auto"
+															},
+															"content": [
+																{
+																	"type": "text",
+																	"text": "This is a synchronous operation, so it executes immediately."
+																}
+															]
+														}
+													]
+												},
+												{
+													"type": "listItem",
+													"content": [
+														{
+															"type": "paragraph",
+															"attrs": {
+																"dir": "auto"
+															},
+															"content": [
+																{
+																	"type": "text",
+																	"marks": [
+																		{
+																			"type": "bold"
+																		}
+																	],
+																	"text": "Output:"
+																},
+																{
+																	"type": "text",
+																	"text": " "
+																},
+																{
+																	"type": "text",
+																	"marks": [
+																		{
+																			"type": "code"
+																		}
+																	],
+																	"text": "Start"
+																}
+															]
+														}
+													]
+												},
+												{
+													"type": "listItem",
+													"content": [
+														{
+															"type": "paragraph",
+															"attrs": {
+																"dir": "auto"
+															},
+															"content": [
+																{
+																	"type": "text",
+																	"marks": [
+																		{
+																			"type": "bold"
+																		}
+																	],
+																	"text": "Stored in:"
+																},
+																{
+																	"type": "text",
+																	"text": " Call Stack (Executes and gets removed)"
+																}
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"type": "listItem",
+									"content": [
+										{
+											"type": "paragraph",
+											"attrs": {
+												"dir": "auto"
+											},
+											"content": [
+												{
+													"type": "text",
+													"marks": [
+														{
+															"type": "bold"
+														}
+													],
+													"text": "Creating a Promise ("
+												},
+												{
+													"type": "text",
+													"marks": [
+														{
+															"type": "bold"
+														},
+														{
+															"type": "code"
+														}
+													],
+													"text": "new Promise"
+												},
+												{
+													"type": "text",
+													"marks": [
+														{
+															"type": "bold"
+														}
+													],
+													"text": ")"
+												}
+											]
+										},
+										{
+											"type": "bulletList",
+											"content": [
+												{
+													"type": "listItem",
+													"content": [
+														{
+															"type": "paragraph",
+															"attrs": {
+																"dir": "auto"
+															},
+															"content": [
+																{
+																	"type": "text",
+																	"text": "The function inside "
+																},
+																{
+																	"type": "text",
+																	"marks": [
+																		{
+																			"type": "code"
+																		}
+																	],
+																	"text": "new Promise()"
+																},
+																{
+																	"type": "text",
+																	"text": " runs immediately."
+																}
+															]
+														}
+													]
+												},
+												{
+													"type": "listItem",
+													"content": [
+														{
+															"type": "paragraph",
+															"attrs": {
+																"dir": "auto"
+															},
+															"content": [
+																{
+																	"type": "text",
+																	"marks": [
+																		{
+																			"type": "bold"
+																		}
+																	],
+																	"text": "Memory Storage:"
+																}
+															]
+														},
+														{
+															"type": "bulletList",
+															"content": [
+																{
+																	"type": "listItem",
+																	"content": [
+																		{
+																			"type": "paragraph",
+																			"attrs": {
+																				"dir": "auto"
+																			},
+																			"content": [
+																				{
+																					"type": "text",
+																					"marks": [
+																						{
+																							"type": "code"
+																						}
+																					],
+																					"text": "myPromise"
+																				},
+																				{
+																					"type": "text",
+																					"text": " is stored in the "
+																				},
+																				{
+																					"type": "text",
+																					"marks": [
+																						{
+																							"type": "bold"
+																						}
+																					],
+																					"text": "Heap Memory"
+																				},
+																				{
+																					"type": "text",
+																					"text": "."
+																				}
+																			]
+																		}
+																	]
+																},
+																{
+																	"type": "listItem",
+																	"content": [
+																		{
+																			"type": "paragraph",
+																			"attrs": {
+																				"dir": "auto"
+																			},
+																			"content": [
+																				{
+																					"type": "text",
+																					"text": "The executor function "
+																				},
+																				{
+																					"type": "text",
+																					"marks": [
+																						{
+																							"type": "code"
+																						}
+																					],
+																					"text": "(resolve, reject) => {}"
+																				},
+																				{
+																					"type": "text",
+																					"text": " is called."
+																				}
+																			]
+																		}
+																	]
+																}
+															]
+														}
+													]
+												},
+												{
+													"type": "listItem",
+													"content": [
+														{
+															"type": "paragraph",
+															"attrs": {
+																"dir": "auto"
+															},
+															"content": [
+																{
+																	"type": "text",
+																	"marks": [
+																		{
+																			"type": "bold"
+																		}
+																	],
+																	"text": "Output:"
+																},
+																{
+																	"type": "text",
+																	"text": " "
+																},
+																{
+																	"type": "text",
+																	"marks": [
+																		{
+																			"type": "code"
+																		}
+																	],
+																	"text": "Inside Promise"
+																}
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"type": "listItem",
+									"content": [
+										{
+											"type": "paragraph",
+											"attrs": {
+												"dir": "auto"
+											},
+											"content": [
+												{
+													"type": "text",
+													"marks": [
+														{
+															"type": "bold"
+														},
+														{
+															"type": "code"
+														}
+													],
+													"text": "setTimeout()"
+												},
+												{
+													"type": "text",
+													"marks": [
+														{
+															"type": "bold"
+														}
+													],
+													"text": " is triggered"
+												}
+											]
+										},
+										{
+											"type": "bulletList",
+											"content": [
+												{
+													"type": "listItem",
+													"content": [
+														{
+															"type": "paragraph",
+															"attrs": {
+																"dir": "auto"
+															},
+															"content": [
+																{
+																	"type": "text",
+																	"marks": [
+																		{
+																			"type": "code"
+																		}
+																	],
+																	"text": "setTimeout(() => { resolve(\"Promise Resolved\"); }, 1000);"
+																},
+																{
+																	"type": "text",
+																	"text": " is a "
+																},
+																{
+																	"type": "text",
+																	"marks": [
+																		{
+																			"type": "bold"
+																		}
+																	],
+																	"text": "Web API call"
+																},
+																{
+																	"type": "text",
+																	"text": " (handled by the browser, not JavaScript itself)."
+																}
+															]
+														}
+													]
+												},
+												{
+													"type": "listItem",
+													"content": [
+														{
+															"type": "paragraph",
+															"attrs": {
+																"dir": "auto"
+															},
+															"content": [
+																{
+																	"type": "text",
+																	"text": "The timer starts, but "
+																},
+																{
+																	"type": "text",
+																	"marks": [
+																		{
+																			"type": "bold"
+																		}
+																	],
+																	"text": "does NOT block"
+																},
+																{
+																	"type": "text",
+																	"text": " execution."
+																}
+															]
+														}
+													]
+												},
+												{
+													"type": "listItem",
+													"content": [
+														{
+															"type": "paragraph",
+															"attrs": {
+																"dir": "auto"
+															},
+															"content": [
+																{
+																	"type": "text",
+																	"marks": [
+																		{
+																			"type": "bold"
+																		}
+																	],
+																	"text": "Stored in:"
+																},
+																{
+																	"type": "text",
+																	"text": " Web APIs (handled by the browser)"
+																}
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"type": "listItem",
+									"content": [
+										{
+											"type": "paragraph",
+											"attrs": {
+												"dir": "auto"
+											},
+											"content": [
+												{
+													"type": "text",
+													"marks": [
+														{
+															"type": "bold"
+														},
+														{
+															"type": "code"
+														}
+													],
+													"text": "myPromise.then()"
+												},
+												{
+													"type": "text",
+													"marks": [
+														{
+															"type": "bold"
+														}
+													],
+													"text": " is encountered"
+												}
+											]
+										},
+										{
+											"type": "bulletList",
+											"content": [
+												{
+													"type": "listItem",
+													"content": [
+														{
+															"type": "paragraph",
+															"attrs": {
+																"dir": "auto"
+															},
+															"content": [
+																{
+																	"type": "text",
+																	"marks": [
+																		{
+																			"type": "code"
+																		}
+																	],
+																	"text": "then()"
+																},
+																{
+																	"type": "text",
+																	"text": " registers a callback to be executed "
+																},
+																{
+																	"type": "text",
+																	"marks": [
+																		{
+																			"type": "bold"
+																		}
+																	],
+																	"text": "later"
+																},
+																{
+																	"type": "text",
+																	"text": " when the promise is resolved."
+																}
+															]
+														}
+													]
+												},
+												{
+													"type": "listItem",
+													"content": [
+														{
+															"type": "paragraph",
+															"attrs": {
+																"dir": "auto"
+															},
+															"content": [
+																{
+																	"type": "text",
+																	"marks": [
+																		{
+																			"type": "bold"
+																		}
+																	],
+																	"text": "Stored in:"
+																},
+																{
+																	"type": "text",
+																	"text": " "
+																},
+																{
+																	"type": "text",
+																	"marks": [
+																		{
+																			"type": "bold"
+																		}
+																	],
+																	"text": "Microtask Queue"
+																},
+																{
+																	"type": "text",
+																	"text": " (not executed yet)"
+																}
+															]
+														}
+													]
+												},
+												{
+													"type": "listItem",
+													"content": [
+														{
+															"type": "paragraph",
+															"attrs": {
+																"dir": "auto"
+															},
+															"content": [
+																{
+																	"type": "text",
+																	"text": "JavaScript does "
+																},
+																{
+																	"type": "text",
+																	"marks": [
+																		{
+																			"type": "bold"
+																		}
+																	],
+																	"text": "not"
+																},
+																{
+																	"type": "text",
+																	"text": " pause; it continues execution."
+																}
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"type": "listItem",
+									"content": [
+										{
+											"type": "paragraph",
+											"attrs": {
+												"dir": "auto"
+											},
+											"content": [
+												{
+													"type": "text",
+													"marks": [
+														{
+															"type": "bold"
+														},
+														{
+															"type": "code"
+														}
+													],
+													"text": "console.log(\"End\")"
+												},
+												{
+													"type": "text",
+													"marks": [
+														{
+															"type": "bold"
+														}
+													],
+													"text": " is executed"
+												}
+											]
+										},
+										{
+											"type": "bulletList",
+											"content": [
+												{
+													"type": "listItem",
+													"content": [
+														{
+															"type": "paragraph",
+															"attrs": {
+																"dir": "auto"
+															},
+															"content": [
+																{
+																	"type": "text",
+																	"text": "Since this is synchronous, it runs immediately."
+																}
+															]
+														}
+													]
+												},
+												{
+													"type": "listItem",
+													"content": [
+														{
+															"type": "paragraph",
+															"attrs": {
+																"dir": "auto"
+															},
+															"content": [
+																{
+																	"type": "text",
+																	"marks": [
+																		{
+																			"type": "bold"
+																		}
+																	],
+																	"text": "Output:"
+																},
+																{
+																	"type": "text",
+																	"text": " "
+																},
+																{
+																	"type": "text",
+																	"marks": [
+																		{
+																			"type": "code"
+																		}
+																	],
+																	"text": "End"
+																}
+															]
+														}
+													]
+												},
+												{
+													"type": "listItem",
+													"content": [
+														{
+															"type": "paragraph",
+															"attrs": {
+																"dir": "auto"
+															},
+															"content": [
+																{
+																	"type": "text",
+																	"marks": [
+																		{
+																			"type": "bold"
+																		}
+																	],
+																	"text": "Stored in:"
+																},
+																{
+																	"type": "text",
+																	"text": " Call Stack (Executes and gets removed)"
+																}
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"type": "listItem",
+									"content": [
+										{
+											"type": "paragraph",
+											"attrs": {
+												"dir": "auto"
+											},
+											"content": [
+												{
+													"type": "text",
+													"marks": [
+														{
+															"type": "bold"
+														}
+													],
+													"text": "After 1 second (setTimeout completes)"
+												}
+											]
+										},
+										{
+											"type": "bulletList",
+											"content": [
+												{
+													"type": "listItem",
+													"content": [
+														{
+															"type": "paragraph",
+															"attrs": {
+																"dir": "auto"
+															},
+															"content": [
+																{
+																	"type": "text",
+																	"text": "The "
+																},
+																{
+																	"type": "text",
+																	"marks": [
+																		{
+																			"type": "code"
+																		}
+																	],
+																	"text": "resolve(\"Promise Resolved\")"
+																},
+																{
+																	"type": "text",
+																	"text": " function is called."
+																}
+															]
+														}
+													]
+												},
+												{
+													"type": "listItem",
+													"content": [
+														{
+															"type": "paragraph",
+															"attrs": {
+																"dir": "auto"
+															},
+															"content": [
+																{
+																	"type": "text",
+																	"text": "The "
+																},
+																{
+																	"type": "text",
+																	"marks": [
+																		{
+																			"type": "bold"
+																		}
+																	],
+																	"text": "Promise is now fulfilled"
+																},
+																{
+																	"type": "text",
+																	"text": "."
+																}
+															]
+														}
+													]
+												},
+												{
+													"type": "listItem",
+													"content": [
+														{
+															"type": "paragraph",
+															"attrs": {
+																"dir": "auto"
+															},
+															"content": [
+																{
+																	"type": "text",
+																	"text": "The registered "
+																},
+																{
+																	"type": "text",
+																	"marks": [
+																		{
+																			"type": "code"
+																		}
+																	],
+																	"text": ".then()"
+																},
+																{
+																	"type": "text",
+																	"text": " callback moves from the "
+																},
+																{
+																	"type": "text",
+																	"marks": [
+																		{
+																			"type": "bold"
+																		}
+																	],
+																	"text": "Microtask Queue"
+																},
+																{
+																	"type": "text",
+																	"text": " to the "
+																},
+																{
+																	"type": "text",
+																	"marks": [
+																		{
+																			"type": "bold"
+																		}
+																	],
+																	"text": "Call Stack"
+																},
+																{
+																	"type": "text",
+																	"text": "."
+																}
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"type": "listItem",
+									"content": [
+										{
+											"type": "paragraph",
+											"attrs": {
+												"dir": "auto"
+											},
+											"content": [
+												{
+													"type": "text",
+													"marks": [
+														{
+															"type": "bold"
+														}
+													],
+													"text": "Promise Callback is executed"
+												}
+											]
+										},
+										{
+											"type": "bulletList",
+											"content": [
+												{
+													"type": "listItem",
+													"content": [
+														{
+															"type": "paragraph",
+															"attrs": {
+																"dir": "auto"
+															},
+															"content": [
+																{
+																	"type": "text",
+																	"marks": [
+																		{
+																			"type": "code"
+																		}
+																	],
+																	"text": "console.log(\"Promise Resolved\")"
+																},
+																{
+																	"type": "text",
+																	"text": " runs inside "
+																},
+																{
+																	"type": "text",
+																	"marks": [
+																		{
+																			"type": "code"
+																		}
+																	],
+																	"text": ".then()"
+																},
+																{
+																	"type": "text",
+																	"text": "."
+																}
+															]
+														}
+													]
+												},
+												{
+													"type": "listItem",
+													"content": [
+														{
+															"type": "paragraph",
+															"attrs": {
+																"dir": "auto"
+															},
+															"content": [
+																{
+																	"type": "text",
+																	"marks": [
+																		{
+																			"type": "bold"
+																		}
+																	],
+																	"text": "Output:"
+																},
+																{
+																	"type": "text",
+																	"text": " "
+																},
+																{
+																	"type": "text",
+																	"marks": [
+																		{
+																			"type": "code"
+																		}
+																	],
+																	"text": "Promise Resolved"
+																}
+															]
+														}
+													]
+												},
+												{
+													"type": "listItem",
+													"content": [
+														{
+															"type": "paragraph",
+															"attrs": {
+																"dir": "auto"
+															},
+															"content": [
+																{
+																	"type": "text",
+																	"marks": [
+																		{
+																			"type": "bold"
+																		}
+																	],
+																	"text": "Stored in:"
+																},
+																{
+																	"type": "text",
+																	"text": " Call Stack (Executes and gets removed)"
+																}
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "aV3w9",
+			"typeName": "shape"
+		},
+		{
+			"x": 2056.36482084792,
+			"y": -512.6494238818525,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:JdkhglxkPJlDXNB3I3wNK",
+			"type": "geo",
+			"props": {
+				"w": 1350.940146244151,
+				"h": 1110.096532014171,
+				"geo": "rectangle",
+				"color": "black",
+				"labelColor": "black",
+				"fill": "none",
+				"dash": "draw",
+				"size": "xl",
+				"font": "draw",
+				"align": "start",
+				"verticalAlign": "middle",
+				"growY": 0,
+				"url": "",
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph"
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "aW96R",
+			"typeName": "shape"
+		},
+		{
+			"x": 985.0338982738008,
+			"y": 583.478838272451,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:jS2W5BEFvyJXSJWm39Fzz",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 271.5190725179716,
+				"font": "sans",
+				"textAlign": "start",
+				"autoSize": false,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "This both exist into promise obj only"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "shape:zl3w3lewZFQKsfzBblQiy",
+			"index": "aC4Qu",
+			"typeName": "shape"
+		},
+		{
+			"x": 945.0028434414285,
+			"y": 593.4279315070905,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:Z3Eg55GzOkMzCdoNRhiSu",
+			"type": "arrow",
+			"props": {
+				"dash": "draw",
+				"size": "m",
+				"fill": "none",
+				"color": "black",
+				"labelColor": "black",
+				"bend": 0,
+				"start": {
+					"x": 0,
+					"y": 0
+				},
+				"end": {
+					"x": 2,
+					"y": 0
+				},
+				"arrowheadStart": "none",
+				"arrowheadEnd": "arrow",
+				"text": "",
+				"labelPosition": 0.5,
+				"font": "sans",
+				"scale": 1
+			},
+			"parentId": "shape:zl3w3lewZFQKsfzBblQiy",
+			"index": "aE2fA",
+			"typeName": "shape"
+		},
+		{
+			"meta": {},
+			"id": "binding:E03vBGJsJiV-u9wX8BSLm",
+			"type": "arrow",
+			"fromId": "shape:Z3Eg55GzOkMzCdoNRhiSu",
+			"toId": "shape:jS2W5BEFvyJXSJWm39Fzz",
+			"props": {
+				"isPrecise": true,
+				"isExact": false,
+				"normalizedAnchor": {
+					"x": 0.020921808126732867,
+					"y": 0.06381558278107463
+				},
+				"terminal": "start"
+			},
+			"typeName": "binding"
+		},
+		{
+			"meta": {},
+			"id": "binding:AphG31Bl9LYcxgQUmGu3t",
+			"type": "arrow",
+			"fromId": "shape:Z3Eg55GzOkMzCdoNRhiSu",
+			"toId": "shape:GaFZ4hs7_wgpCN6HdTJRZ",
+			"props": {
+				"isPrecise": true,
+				"isExact": false,
+				"normalizedAnchor": {
+					"x": 0.37037035758932246,
+					"y": 0.029158510364731702
+				},
+				"terminal": "end"
+			},
+			"typeName": "binding"
+		},
+		{
+			"x": 971.9861192615674,
+			"y": 609.0498050414344,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:GAhU6LK-HCY6t03hzdHJz",
+			"type": "arrow",
+			"props": {
+				"dash": "draw",
+				"size": "m",
+				"fill": "none",
+				"color": "black",
+				"labelColor": "black",
+				"bend": 0,
+				"start": {
+					"x": 0,
+					"y": 0
+				},
+				"end": {
+					"x": 2,
+					"y": 0
+				},
+				"arrowheadStart": "none",
+				"arrowheadEnd": "arrow",
+				"text": "",
+				"labelPosition": 0.5,
+				"font": "sans",
+				"scale": 1
+			},
+			"parentId": "shape:zl3w3lewZFQKsfzBblQiy",
+			"index": "aD9t9",
+			"typeName": "shape"
+		},
+		{
+			"meta": {},
+			"id": "binding:SeqJRjLVrQTAEJivf7Yu8",
+			"type": "arrow",
+			"fromId": "shape:GAhU6LK-HCY6t03hzdHJz",
+			"toId": "shape:jS2W5BEFvyJXSJWm39Fzz",
+			"props": {
+				"isPrecise": false,
+				"isExact": false,
+				"normalizedAnchor": {
+					"x": 0.09627360030156913,
+					"y": 0.536038969732914
+				},
+				"terminal": "start"
+			},
+			"typeName": "binding"
+		},
+		{
+			"meta": {},
+			"id": "binding:XfDr8-h8YJET1kk2EVIfz",
+			"type": "arrow",
+			"fromId": "shape:GAhU6LK-HCY6t03hzdHJz",
+			"toId": "shape:GaFZ4hs7_wgpCN6HdTJRZ",
+			"props": {
+				"isPrecise": true,
+				"isExact": false,
+				"normalizedAnchor": {
+					"x": 0.3650465011843626,
+					"y": 0.11199669408496367
+				},
+				"terminal": "end"
+			},
+			"typeName": "binding"
+		}
+	]
+}
